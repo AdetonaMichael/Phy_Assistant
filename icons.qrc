@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/oau.jpg</file>
+    <file>icons/physics.jpg</file>
+    <file>icons/physics.png</file>
+    <file>icons/atom2.ico</file>
+    <file>icons/battery.ico</file>
+    <file>icons/calculate.ico</file>
+    <file>icons/note.ico</file>
+    <file>icons/atom.ico</file>
+  </qresource>
+</RCC>

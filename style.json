@@ -1,0 +1,104 @@
+{
+"QCustomSlideMenu":[
+    {
+        "name":"widget",
+        "defaultSize":[
+            {
+                "width":0,
+                "height":0
+            }
+        ],
+        "collapsedSize":[
+        
+            {
+                "width":"auto",
+                "height":"auto"
+            }
+        ],
+        "expandedSize":[
+            {
+                "width":"auto",
+                "height":"auto"
+            }
+        ],
+        "toggleButton":[{
+            "buttonName":"my_toggle_button",
+            "icons":[{
+                "whenMenuIsCollapsed":"icons/atom2.ico",
+                "whenMenuIsExpanded":"icons/atom.ico"
+            }],
+            "style":[{
+                "whenMenuIsCollapsed":[
+                    "background-color: rgb(255,255,255);",
+                    "padding-top:5px;",
+                    "padding-bottom:5px;",
+                    "color:gray"
+                ],
+                "whenMenuIsExpanded":[
+                    
+                ]
+            }]
+        }],
+        "menuTransitionAnimation":[{
+            "animationDuration":2000,
+            "animationEasingCurve":"Linear",
+            "whenCollapsing":[{
+                "animationDuration":500,
+                "animationEasingCurve":"OutInBack"
+            }],
+            "whenExpanding":[{
+                "animationDuration":500,
+                "animationEasingCurve":"OutInBack"
+            }]
+        }],
+        "menuContainerStyle":[{
+            "whenMenuIsCollapsed":[
+                "border: 2px solid transparent"
+            ],
+            "whenMenuIsExapnded":[
+                "border:10px solid blue; background-color:white; color:gray;"
+            ]
+        }]
+
+        
+    }],
+    "QStackedWidget":[
+		{
+			"name":"myStackedWidget",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":1000,
+							"easingCurve": "Linear"
+						}
+					],
+					"slide":[
+						{
+							"active":false,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+					"nextPage":"nxt",
+					"previousPage": "prev",
+					"navigationButtons":[
+						{
+							"page1": "page",
+							"page2": "page_2"
+						}
+					]
+				}
+			]
+	
+		}
+	]
+
+
+}
