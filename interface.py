@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1291, 889)
+        MainWindow.resize(1259, 814)
         icon = QIcon()
         icon.addFile(u":/icons/icons/atom.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -796,21 +796,69 @@ class Ui_MainWindow(object):
         self.page1.setObjectName(u"page1")
         self.verticalLayout_10 = QVBoxLayout(self.page1)
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
-        self.note1_label = QLabel(self.page1)
-        self.note1_label.setObjectName(u"note1_label")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.note1_label_2 = QLabel(self.page1)
+        self.note1_label_2.setObjectName(u"note1_label_2")
         font4 = QFont()
         font4.setFamily(u"hooge 05_54")
         font4.setPointSize(11)
         font4.setBold(False)
         font4.setItalic(False)
         font4.setWeight(50)
+        self.note1_label_2.setFont(font4)
+        self.note1_label_2.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 11pt \"hooge 05_54\";\n"
+"padding:10px")
+        self.note1_label_2.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_5.addWidget(self.note1_label_2)
+
+
+        self.verticalLayout_10.addLayout(self.horizontalLayout_5)
+
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.note1_label = QLabel(self.page1)
+        self.note1_label.setObjectName(u"note1_label")
         self.note1_label.setFont(font4)
         self.note1_label.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
 "color: rgb(255, 255, 255);\n"
-"font: 11pt \"hooge 05_54\";")
+"font: 11pt \"hooge 05_54\";\n"
+"padding:10px")
         self.note1_label.setAlignment(Qt.AlignCenter)
 
-        self.verticalLayout_10.addWidget(self.note1_label)
+        self.horizontalLayout_6.addWidget(self.note1_label)
+
+        self.total_count_btn = QPushButton(self.page1)
+        self.total_count_btn.setObjectName(u"total_count_btn")
+        self.total_count_btn.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;\n"
+"font: 11pt \"hooge 05_54\";")
+        self.total_count_btn.setIcon(icon1)
+
+        self.horizontalLayout_6.addWidget(self.total_count_btn)
+
+        self.single_count_btn = QPushButton(self.page1)
+        self.single_count_btn.setObjectName(u"single_count_btn")
+        self.single_count_btn.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;\n"
+"font: 11pt \"hooge 05_54\";")
+        self.single_count_btn.setIcon(icon1)
+
+        self.horizontalLayout_6.addWidget(self.single_count_btn)
+
+
+        self.verticalLayout_10.addLayout(self.horizontalLayout_6)
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -820,13 +868,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.prev_note)
 
-        self.note1_content = QPlainTextEdit(self.page1)
-        self.note1_content.setObjectName(u"note1_content")
-        self.note1_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.note_content = QTextBrowser(self.page1)
+        self.note_content.setObjectName(u"note_content")
+        self.note_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
 "font: 75 14pt \"Arial\";")
 
-        self.horizontalLayout_3.addWidget(self.note1_content)
+        self.horizontalLayout_3.addWidget(self.note_content)
 
         self.line_2 = QFrame(self.page1)
         self.line_2.setObjectName(u"line_2")
@@ -847,7 +895,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addWidget(self.note1_label_fmlist)
 
-        self.formula_list_content = QPlainTextEdit(self.page1)
+        self.formula_list_content = QTextBrowser(self.page1)
         self.formula_list_content.setObjectName(u"formula_list_content")
         self.formula_list_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
@@ -872,13 +920,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addWidget(self.note1_label_se)
 
-        self.solved_example_content = QPlainTextEdit(self.page1)
-        self.solved_example_content.setObjectName(u"solved_example_content")
-        self.solved_example_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.solved_examples_content = QTextBrowser(self.page1)
+        self.solved_examples_content.setObjectName(u"solved_examples_content")
+        self.solved_examples_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
 "font: 75 14pt \"Arial\";")
 
-        self.verticalLayout_7.addWidget(self.solved_example_content)
+        self.verticalLayout_7.addWidget(self.solved_examples_content)
 
 
         self.horizontalLayout_3.addLayout(self.verticalLayout_7)
@@ -911,7 +959,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1082, 731))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1050, 656))
         self.label_14 = QLabel(self.scrollAreaWidgetContents_2)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(70, 70, 61, 31))
@@ -997,10 +1045,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.plainTextEdit = QPlainTextEdit(self.formula_list_page)
-        self.plainTextEdit.setObjectName(u"plainTextEdit")
+        self.full_formula_list_content = QTextBrowser(self.formula_list_page)
+        self.full_formula_list_content.setObjectName(u"full_formula_list_content")
+        self.full_formula_list_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 12pt \"Times New Roman\";")
 
-        self.horizontalLayout_4.addWidget(self.plainTextEdit)
+        self.horizontalLayout_4.addWidget(self.full_formula_list_content)
 
         self.verticalLayout_16 = QVBoxLayout()
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
@@ -1045,11 +1096,11 @@ class Ui_MainWindow(object):
         self.verticalLayout_12.addLayout(self.verticalLayout_14)
 
         self.stackedWidget.addWidget(self.formula_list_page)
-        self.page_4 = QWidget()
-        self.page_4.setObjectName(u"page_4")
-        self.verticalLayout_13 = QVBoxLayout(self.page_4)
+        self.solved_examples_page = QWidget()
+        self.solved_examples_page.setObjectName(u"solved_examples_page")
+        self.verticalLayout_13 = QVBoxLayout(self.solved_examples_page)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.label_6 = QLabel(self.page_4)
+        self.label_6 = QLabel(self.solved_examples_page)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setStyleSheet(u"background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 255);\n"
@@ -1058,7 +1109,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_13.addWidget(self.label_6)
 
-        self.stackedWidget.addWidget(self.page_4)
+        self.stackedWidget.addWidget(self.solved_examples_page)
 
         self.horizontalLayout_2.addWidget(self.stackedWidget)
 
@@ -1090,17 +1141,17 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_9.addWidget(self.prev)
 
-        self.page = QPushButton(self.frame_2)
-        self.page.setObjectName(u"page")
-        self.page.setStyleSheet(u"padding:10px;")
+        self.formula_list_btn = QPushButton(self.frame_2)
+        self.formula_list_btn.setObjectName(u"formula_list_btn")
+        self.formula_list_btn.setStyleSheet(u"padding:10px;")
 
-        self.verticalLayout_9.addWidget(self.page)
+        self.verticalLayout_9.addWidget(self.formula_list_btn)
 
-        self.page_2 = QPushButton(self.frame_2)
-        self.page_2.setObjectName(u"page_2")
-        self.page_2.setStyleSheet(u"padding:10px;")
+        self.solved_examples_btn = QPushButton(self.frame_2)
+        self.solved_examples_btn.setObjectName(u"solved_examples_btn")
+        self.solved_examples_btn.setStyleSheet(u"padding:10px;")
 
-        self.verticalLayout_9.addWidget(self.page_2)
+        self.verticalLayout_9.addWidget(self.solved_examples_btn)
 
 
         self.horizontalLayout_2.addLayout(self.verticalLayout_9)
@@ -1112,6 +1163,151 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.addWidget(self.frame_2)
 
         self.Home.addTab(self.tab_2, "")
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.verticalLayout_19 = QVBoxLayout(self.update_page)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.horizontalLayout_10 = QHBoxLayout()
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.update_update_btn = QPushButton(self.update_page)
+        self.update_update_btn.setObjectName(u"update_update_btn")
+        self.update_update_btn.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;")
+        self.update_update_btn.setIcon(icon2)
+
+        self.horizontalLayout_10.addWidget(self.update_update_btn)
+
+        self.update_add_btn = QPushButton(self.update_page)
+        self.update_add_btn.setObjectName(u"update_add_btn")
+        self.update_add_btn.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;")
+        self.update_add_btn.setIcon(icon1)
+
+        self.horizontalLayout_10.addWidget(self.update_add_btn)
+
+        self.update_delete_btn = QPushButton(self.update_page)
+        self.update_delete_btn.setObjectName(u"update_delete_btn")
+        self.update_delete_btn.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;")
+        self.update_delete_btn.setIcon(icon1)
+
+        self.horizontalLayout_10.addWidget(self.update_delete_btn)
+
+
+        self.verticalLayout_19.addLayout(self.horizontalLayout_10)
+
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.verticalLayout_18 = QVBoxLayout()
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.update_note_title = QLineEdit(self.update_page)
+        self.update_note_title.setObjectName(u"update_note_title")
+        self.update_note_title.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 11pt \"hooge 05_54\";")
+
+        self.horizontalLayout_9.addWidget(self.update_note_title)
+
+        self.update_count_label = QPushButton(self.update_page)
+        self.update_count_label.setObjectName(u"update_count_label")
+        self.update_count_label.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"border-radius:60px;\n"
+"margin-right:20px;\n"
+"margin-left:20px;\n"
+"padding:5px;\n"
+"color:white;\n"
+"font: 11pt \"hooge 05_54\";")
+        self.update_count_label.setIcon(icon1)
+
+        self.horizontalLayout_9.addWidget(self.update_count_label)
+
+
+        self.verticalLayout_18.addLayout(self.horizontalLayout_9)
+
+        self.update_note_content = QTextEdit(self.update_page)
+        self.update_note_content.setObjectName(u"update_note_content")
+        self.update_note_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 75 14pt \"Arial\";")
+
+        self.verticalLayout_18.addWidget(self.update_note_content)
+
+
+        self.horizontalLayout_7.addLayout(self.verticalLayout_18)
+
+        self.line_7 = QFrame(self.update_page)
+        self.line_7.setObjectName(u"line_7")
+        self.line_7.setFrameShape(QFrame.VLine)
+        self.line_7.setFrameShadow(QFrame.Sunken)
+
+        self.horizontalLayout_7.addWidget(self.line_7)
+
+        self.verticalLayout_17 = QVBoxLayout()
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.update_formula_list_label = QLabel(self.update_page)
+        self.update_formula_list_label.setObjectName(u"update_formula_list_label")
+        self.update_formula_list_label.setFont(font4)
+        self.update_formula_list_label.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 11pt \"hooge 05_54\";")
+        self.update_formula_list_label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_17.addWidget(self.update_formula_list_label)
+
+        self.update_formula_list_content = QTextEdit(self.update_page)
+        self.update_formula_list_content.setObjectName(u"update_formula_list_content")
+        self.update_formula_list_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 75 14pt \"Arial\";")
+
+        self.verticalLayout_17.addWidget(self.update_formula_list_content)
+
+        self.update_solved_examples_label = QLabel(self.update_page)
+        self.update_solved_examples_label.setObjectName(u"update_solved_examples_label")
+        self.update_solved_examples_label.setFont(font4)
+        self.update_solved_examples_label.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 11pt \"hooge 05_54\";")
+        self.update_solved_examples_label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_17.addWidget(self.update_solved_examples_label)
+
+        self.update_solved_examples_content = QTextEdit(self.update_page)
+        self.update_solved_examples_content.setObjectName(u"update_solved_examples_content")
+        self.update_solved_examples_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 75 14pt \"Arial\";")
+
+        self.verticalLayout_17.addWidget(self.update_solved_examples_content)
+
+        self.line_8 = QFrame(self.update_page)
+        self.line_8.setObjectName(u"line_8")
+        self.line_8.setFrameShape(QFrame.HLine)
+        self.line_8.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_17.addWidget(self.line_8)
+
+
+        self.horizontalLayout_7.addLayout(self.verticalLayout_17)
+
+
+        self.verticalLayout_19.addLayout(self.horizontalLayout_7)
+
+        self.Home.addTab(self.update_page, "")
 
         self.verticalLayout_3.addWidget(self.Home)
 
@@ -1126,7 +1322,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.Home.setCurrentIndex(1)
+        self.Home.setCurrentIndex(2)
         self.stackedWidget.setCurrentIndex(0)
 
 
@@ -1134,7 +1330,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Physics Assistant", None))
         self.calculate_anser_button_7.setText(QCoreApplication.translate("MainWindow", u"Calculate Answer", None))
         self.notes_button_7.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
         self.solved_examples_button_7.setText(QCoreApplication.translate("MainWindow", u"Solved_examples", None))
@@ -1147,14 +1343,14 @@ class Ui_MainWindow(object):
         self.about_button.setText(QCoreApplication.translate("MainWindow", u"About PhyAss", None))
         self.menu_button.setText(QCoreApplication.translate("MainWindow", u"Menu", None))
         self.my_toggle_button.setText(QCoreApplication.translate("MainWindow", u"Phy Assistant Version 1.0", None))
-        self.Home.setTabText(self.Home.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Tab 1", None))
+        self.Home.setTabText(self.Home.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"HOME", None))
+        self.note1_label_2.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
         self.note1_label.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
+        self.total_count_btn.setText(QCoreApplication.translate("MainWindow", u"Count", None))
+        self.single_count_btn.setText(QCoreApplication.translate("MainWindow", u"single count", None))
         self.prev_note.setText(QCoreApplication.translate("MainWindow", u"<<", None))
-        self.note1_content.setPlainText("")
         self.note1_label_fmlist.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
-        self.formula_list_content.setPlainText("")
         self.note1_label_se.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
-        self.solved_example_content.setPlainText("")
         self.next_note.setText(QCoreApplication.translate("MainWindow", u">>", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Calculate Answer", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"R^2", None))
@@ -1167,14 +1363,81 @@ class Ui_MainWindow(object):
         self.gravity_answer.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.calculate_gravity.setText(QCoreApplication.translate("MainWindow", u"Calculate", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
+        self.full_formula_list_content.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#diffraction\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Diffraction</span></a></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Fibre Optics</span></a></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-siz"
+                        "e:11pt; text-decoration: underline; color:#0000ff;\">ElectroDynamics</span></a></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Relativity</span></a></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Physics of Sensors</span></a></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Diffraction</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS S"
+                        "hell Dlg 2'; font-size:10pt; font-style:italic;\">1.Grating Formula</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">(a+b) = Grating element</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u0398 = Angle of Diffraction</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">n = order of Diffraction</span></p>\n"
+""
+                        "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'Calibri,sans-serif,serif'; font-size:10pt; font-style:italic;\">\u03bb = Wavelength of wave getting Diffracted</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">2. Grating element</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;\">\u00a0\u00a0 (a+b) = </span><img src=\"file:///C:/User"
+                        "s/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"8\" height=\"26\" /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">Where:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">(a+b) = Grating element</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">N = Number of lines per unit length of Grating </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px"
+                        "; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">3. Resolving power of Grating (R.P)</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-style:italic;\"> </span><span style=\" font-family:'Calibri,sans-serif'; font-size:14pt; font-weight:600;\">R.P = </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"13\" height=\"27\" /><span style=\" font-family:'Calibri,sans-serif'; font-size:14pt; font-weight:600;\">\u00a0= mN</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:"
+                        "0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">Where:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">N = Number of lines per unit length of Grating </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">m = order of Diffraction </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><img src=\"file:///C:/Users/CYBERL~1"
+                        "/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"8\" height=\"19\" /><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0= Mean Wavelength of sources to be resolved </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"16\" height=\"19\" /><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0= Difference between Wavelength of Sources to be resolved</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-bloc"
+                        "k-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Fibre Optics</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:10pt; font-style:italic;\">t1. Numerical Aperture (N.A)</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:10pt; font-style:italic;\">N.A =</span><span style=\" fo"
+                        "nt-size:10pt; font-style:italic;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"27\" height=\"17\" /><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\">0 </span><span style=\" font-size:10pt; font-style:italic;\">=</span><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png\" width=\"59\" height=\"21\" /><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">Where:</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0"
+                        "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Acceptance angle</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"_Hlk82195492\"></a><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"14\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of Core</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol"
+                        "'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of cladding </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">N.A =</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png\" width=\"30\" height=\"17\" /><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\">0</span><span style=\" font-size:11pt; fon"
+                        "t-style:italic;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png\" width=\"3\" height=\"17\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png\" width=\"35\" height=\"43\" /><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">1.</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:11pt; font-style:italic;\">Numerical Aperture (N.A) of fiber in other medium</span><span style=\" font-"
+                        "size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Acceptance angle</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"14\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Re"
+                        "fractive Index of Core</span><span style=\" font-size:11pt;\"> </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of cladding </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style"
+                        ":italic;\">\u00a0= Refractive index of another outer medium</span><span style=\" font-size:11pt;\"> </span></p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"This Section Shows a list of Formulas", None))
         self.pushButton_3.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
         self.stacked_toggle_button.setText(QCoreApplication.translate("MainWindow", u"Toggle ", None))
         self.nxt.setText(QCoreApplication.translate("MainWindow", u"Next", None))
         self.prev.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
-        self.page.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
-        self.page_2.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
-        self.Home.setTabText(self.Home.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Tab 2", None))
+        self.formula_list_btn.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
+        self.solved_examples_btn.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
+        self.Home.setTabText(self.Home.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"CONTENT", None))
+        self.update_update_btn.setText(QCoreApplication.translate("MainWindow", u"UPDATE", None))
+        self.update_add_btn.setText(QCoreApplication.translate("MainWindow", u"ADD", None))
+        self.update_delete_btn.setText(QCoreApplication.translate("MainWindow", u"DELETE", None))
+        self.update_note_title.setText(QCoreApplication.translate("MainWindow", u"Title", None))
+        self.update_count_label.setText(QCoreApplication.translate("MainWindow", u"Count", None))
+        self.update_formula_list_label.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
+        self.update_solved_examples_label.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
+        self.Home.setTabText(self.Home.indexOf(self.update_page), QCoreApplication.translate("MainWindow", u"UPDATE", None))
     # retranslateUi
 

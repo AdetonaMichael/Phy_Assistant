@@ -18,7 +18,7 @@ from Custom_Widgets.Widgets import  loadJsonStyle
 #creating the mainwindow class
 class MainWindow(QMainWindow):
     # establishing connection to databse
-    db = sqlite3.connect('phy_assistant.db')
+    db = sqlite3.connect('phy_assistant2.db')
     page_id = 1
     
     #creating cursor object for performing database query
@@ -29,6 +29,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.handel_buttons()
+        self.navigate()
         
         #Applying JSON Stylesheet
         loadJsonStyle(self, self.ui)
@@ -40,8 +41,8 @@ class MainWindow(QMainWindow):
         self.ui.prev.clicked.connect(lambda: self.ui.stackedWidget.slideToPreviousWidget())
         self.ui.nxt.clicked.connect(lambda: self.ui.stackedWidget.slideToNextWidget())
 
-        self.ui.page.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page1))
-        self.ui.page_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page2))
+        self.ui.formula_list_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.formula_list_page))
+        self.ui.solved_examples_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.solved_examples_page))
         
         # adding animation to the code
         self.ui.stackedWidget.setTransitionDirection(QtCore.Qt.Vertical)
@@ -54,6 +55,8 @@ class MainWindow(QMainWindow):
         self.ui.calculate_gravity.clicked.connect(self.cal_force_of_gravity)
         self.ui.next_note.clicked.connect(self.next_page)
         self.ui.prev_note.clicked.connect(self.prev_page)
+        self.ui.update_update_btn.clicked.connect(self.update)
+        
     #function to calculate the force of gravity
     def cal_force_of_gravity(self):
         g,m1,m2,r = 6.67*math.pow(10,-34),0,0,0
@@ -69,7 +72,7 @@ class MainWindow(QMainWindow):
        MainWindow.controller.execute(sql)
        result = MainWindow.controller.fetchone()
        self.ui.note1_label.setText(str(result[1])) 
-       self.ui.note1_content.insertPlainText (str(result[3]))
+       self.ui.note_content.insertPlainText (str(result[2]))
        
     #creting function to connect to next page
     def next_page(self):
@@ -77,9 +80,13 @@ class MainWindow(QMainWindow):
         sql = "SELECT * FROM Topics WHERE id=%d"%(next_id)
         MainWindow.controller.execute(sql)
         result = MainWindow.controller.fetchone()
+        self.ui.single_count_btn.setText(str(result[0]))
         self.ui.note1_label.setText(str(result[1])) 
-        self.ui.note1_content.insertPlainText (str(result[1]))
+        self.ui.note_content.setText (str(result[2]))
+        self.ui.formula_list_content.setText(str(result[4]))
+        self.ui.solved_examples_content.setText(str(result[3]))
         MainWindow.page_id = MainWindow.page_id + next_id
+        print(("the length of the result is: {}".format(len(result))))
     
     def prev_page(self):
         prev_id = MainWindow.page_id-1
@@ -88,11 +95,44 @@ class MainWindow(QMainWindow):
         result = MainWindow.controller.fetchone()
         print(result)
         MainWindow.page_id = prev_id
+    
+    def get_count(self):
+        sql = "SELECT COUNT(*) FROM Topics"
+        MainWindow.controller.execute(sql)
+        result = MainWindow.controller.fetchall() 
+        return result
+    
+    def navigate(self):
+        sql = 'SELECT * FROM Topics'
+        result = MainWindow.controller.execute(sql)
+        result = MainWindow.controller.fetchone()
+        
+        #defining and the widget in the textbox interface
+        self.ui.update_count_label.setText(str(result[0]))
+        self.ui.update_note_title.setText(str(result[1]))
+        self.ui.update_note_content.setText(str(result[2]))
+        self.ui.update_solved_examples_content.setText(str(result[3]))
+        self.ui.update_formula_list_content.setText(str(result[4]))
+
+    
+    def update(self):
+        #defining and the widget in the textbox interface
+        id = int(self.ui.update_count_label.text())
+        title_ = str(self.ui.update_note_title.text())
+        content_ = str(self.ui.update_note_content.acceptRichText())
+        examples_  = str(self.ui.update_solved_examples_content.acceptRichText())
+        formula_list_  = str(self.ui.update_formula_list_content.acceptRichText())
+        
+        row = (title_, content_, examples_, formula_list_, id)
+        sql = '''UPDATE Topics SET title=?, content=?, examples=?, formula_list=? where id = ?'''
+        MainWindow.controller.execute(sql,row)
+        MainWindow.db.commit()
+        
    
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
-    window.next_page()
+    window.get_count()
     window.show()
     sys.exit(app.exec_())
         
