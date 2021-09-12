@@ -558,7 +558,7 @@ QAbstractSpinBox {
        <string notr="true">padding:0px;</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -893,22 +893,6 @@ padding:5px;</string>
           </property>
          </spacer>
         </item>
-        <item>
-         <widget class="QPushButton" name="my_toggle_button">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(0, 85, 127);
-color: rgb(255, 255, 255);
-font: 11pt &quot;hooge 05_54&quot;;</string>
-          </property>
-          <property name="text">
-           <string>Phy Assistant Version 1.0</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../../phy_assistant2/icons.qrc">
-            <normaloff>:/icons/icons/atom2.ico</normaloff>:/icons/icons/atom2.ico</iconset>
-          </property>
-         </widget>
-        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="tab_2">
@@ -930,7 +914,7 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
              <item>
               <widget class="QStackedWidget" name="stackedWidget">
                <property name="currentIndex">
-                <number>0</number>
+                <number>2</number>
                </property>
                <widget class="QWidget" name="page1">
                 <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -1179,7 +1163,7 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                       <x>0</x>
                       <y>0</y>
                       <width>1050</width>
-                      <height>656</height>
+                      <height>623</height>
                      </rect>
                     </property>
                     <widget class="QLabel" name="label_14">
@@ -1426,6 +1410,137 @@ font: 12pt &quot;Times New Roman&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#diffraction&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#aa0000;&quot;&gt;Diffraction    &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#aa0000;&quot;&gt;Fibre&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt; &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt;Optics   &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt;ElectroDynamics&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt;    Relativity   &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt; Physics of Sensors&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;&quot;&gt;Formula List for Fibre Diffraction&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;1.&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Grating Formula&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;(a+b) = Grating element&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Θ = Angle of Diffraction&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;n = order of Diffraction&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;λ = Wavelength of wave getting Diffracted&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;2. Grating element&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;            (a+b) = &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png&quot; width=&quot;9&quot; height=&quot;28&quot; /&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Where:&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;(a+b) = Grating element&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;N = Number of lines per unit length of Grating &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;3. Resolving power of Grating (R.P)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;            R.P = &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png&quot; width=&quot;13&quot; height=&quot;29&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = mN&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Where:&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;N = Number of lines per unit length of Grating &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;m = order of Diffraction &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;     &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png&quot; width=&quot;8&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Mean Wavelength of sources to be resolved &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;     &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Difference between Wavelength of Sources to be resolved&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;&quot;&gt;Formula List for Fibre Optics&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;t1. Numerical Aperture (N.A)&lt;/span&gt; &lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;N.A = &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png&quot; width=&quot;32&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; vertical-align:sub;&quot;&gt;0 &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; vertical-align:sub;&quot;&gt; &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png&quot; width=&quot;70&quot; height=&quot;25&quot; /&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Where:&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Acceptance angle&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;_Hlk82195492&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Refractive Index of Core&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Refractive Index of cladding &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt; &lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;N.A =&lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png&quot; width=&quot;35&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; vertical-align:sub;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png&quot; width=&quot;4&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png&quot; width=&quot;43&quot; height=&quot;46&quot; /&gt; &lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;1.&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Numerical Aperture (N.A) of fiber in other medium&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Acceptance angle&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Refractive Index of Core&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Refractive Index of cladding &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png&quot; width=&quot;16&quot; height=&quot;20&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; = Refractive index of another outer medium&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt; &lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_16">
+                       <item>
+                        <widget class="QLabel" name="label_3">
+                         <property name="styleSheet">
+                          <string notr="true">padding:10px;
+background-color:white;
+color:black;
+font: 75 14pt &quot;Arial&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string>This Section Shows a list of Formulas</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="Line" name="line_6">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_3">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(255, 255, 255);
+padding-top:10px;
+</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../phy_assistant2/icons.qrc">
+                           <normaloff>:/icons/icons/calculate.ico</normaloff>:/icons/icons/calculate.ico</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>300</width>
+                           <height>230</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_15"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="solved_examples_page">
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;hooge 05_54&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Solved Examples</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QTextBrowser" name="full_formula_list_content_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 12pt &quot;Times New Roman&quot;;</string>
+                     </property>
+                     <property name="html">
+                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#diffraction&quot;&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline; color:#0000ff;&quot;&gt;Diffraction&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline; color:#0000ff;&quot;&gt;Fibre Optics&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#fibreoptics&quot;&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline; color:#0000ff;&quot;&gt;ElectroDynamics&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1466,80 +1581,59 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:11pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png&quot; width=&quot;14&quot; height=&quot;19&quot; /&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt; = Refractive Index of Core&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:11pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png&quot; width=&quot;15&quot; height=&quot;19&quot; /&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt; = Refractive Index of cladding &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:11pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png&quot; width=&quot;15&quot; height=&quot;19&quot; /&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt; = Refractive index of another outer medium&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_20">
+                     <item>
+                      <widget class="QLabel" name="label_5">
+                       <property name="styleSheet">
+                        <string notr="true">padding:10px;
+background-color:white;
+color:black;
+font: 75 14pt &quot;Arial&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Solved Examples Section</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <layout class="QVBoxLayout" name="verticalLayout_16">
-                       <item>
-                        <widget class="QLabel" name="label_3">
-                         <property name="styleSheet">
-                          <string notr="true">padding:10px;
-background-color:white;
-color:black;
-font: 75 14pt &quot;Arial&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>This Section Shows a list of Formulas</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="Line" name="line_6">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="pushButton_3">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-padding-top:10px;
-</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                         <property name="icon">
-                          <iconset resource="../../phy_assistant2/icons.qrc">
-                           <normaloff>:/icons/icons/physics.jpg</normaloff>:/icons/icons/physics.jpg</iconset>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>300</width>
-                           <height>230</height>
-                          </size>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
+                      <widget class="Line" name="line_9">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
                      </item>
                      <item>
-                      <layout class="QVBoxLayout" name="verticalLayout_15"/>
+                      <widget class="QPushButton" name="pushButton_4">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+padding-top:10px;
+</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="../../phy_assistant2/icons.qrc">
+                         <normaloff>:/icons/icons/atom2.ico</normaloff>:/icons/icons/atom2.ico</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>300</width>
+                         <height>230</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_21"/>
+                   </item>
                   </layout>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="solved_examples_page">
-                <layout class="QVBoxLayout" name="verticalLayout_13">
-                 <item>
-                  <widget class="QLabel" name="label_6">
-                   <property name="styleSheet">
-                    <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-font: 11pt &quot;hooge 05_54&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>Solved Examples</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -1555,13 +1649,13 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_9">
                <item>
-                <widget class="QPushButton" name="stacked_toggle_button">
+                <widget class="QPushButton" name="main_note_btn">
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(0, 85, 127);
 padding:10px;</string>
                  </property>
                  <property name="text">
-                  <string>Toggle </string>
+                  <string>NOTE</string>
                  </property>
                 </widget>
                </item>
@@ -1699,7 +1793,7 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="update_count_label">
+               <widget class="QLineEdit" name="update_count_label">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgb(0, 85, 127);
 border-radius:60px;
@@ -1711,10 +1805,6 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                 </property>
                 <property name="text">
                  <string>Count</string>
-                </property>
-                <property name="icon">
-                 <iconset resource="../../phy_assistant2/icons.qrc">
-                  <normaloff>:/icons/icons/atom2.ico</normaloff>:/icons/icons/atom2.ico</iconset>
                 </property>
                </widget>
               </item>
@@ -1817,8 +1907,43 @@ font: 75 14pt &quot;Arial&quot;;</string>
           </item>
          </layout>
         </item>
+        <item>
+         <widget class="QPushButton" name="update_refresh_btn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 85, 127);
+border-radius:60px;
+margin-right:20px;
+margin-left:20px;
+padding:5px;
+color:white;</string>
+          </property>
+          <property name="text">
+           <string>Refresh</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../phy_assistant2/icons.qrc">
+            <normaloff>:/icons/icons/note.ico</normaloff>:/icons/icons/note.ico</iconset>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="my_toggle_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+font: 11pt &quot;hooge 05_54&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Phy Assistant Version 1.0</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../phy_assistant2/icons.qrc">
+        <normaloff>:/icons/icons/atom2.ico</normaloff>:/icons/icons/atom2.ico</iconset>
+      </property>
      </widget>
     </item>
     <item>
