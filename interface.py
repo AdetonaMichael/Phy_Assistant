@@ -15,12 +15,13 @@ from custom_qstacked_widgets import *
 from Custom_Widgets.Widgets import QCustomSlideMenu
 
 import icons_rc
+import images_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1259, 814)
+        MainWindow.resize(1697, 889)
         icon = QIcon()
         icon.addFile(u":/icons/icons/atom.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -950,7 +951,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1050, 623))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1538, 698))
         self.label_14 = QLabel(self.scrollAreaWidgetContents_2)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(70, 70, 61, 31))
@@ -1091,63 +1092,51 @@ class Ui_MainWindow(object):
         self.solved_examples_page.setObjectName(u"solved_examples_page")
         self.verticalLayout_13 = QVBoxLayout(self.solved_examples_page)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.label_6 = QLabel(self.solved_examples_page)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setStyleSheet(u"background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 255, 255);\n"
-"font: 11pt \"hooge 05_54\";")
-        self.label_6.setAlignment(Qt.AlignCenter)
-
-        self.verticalLayout_13.addWidget(self.label_6)
-
-        self.horizontalLayout_11 = QHBoxLayout()
-        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.full_formula_list_content_2 = QTextBrowser(self.solved_examples_page)
-        self.full_formula_list_content_2.setObjectName(u"full_formula_list_content_2")
-        self.full_formula_list_content_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"color: rgb(0, 0, 0);\n"
-"font: 12pt \"Times New Roman\";")
-
-        self.horizontalLayout_11.addWidget(self.full_formula_list_content_2)
-
-        self.verticalLayout_20 = QVBoxLayout()
-        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.horizontalLayout_12 = QHBoxLayout()
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
         self.label_5 = QLabel(self.solved_examples_page)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setStyleSheet(u"padding:10px;\n"
+        self.label_5.setAcceptDrops(False)
+        self.label_5.setStyleSheet(u"background-image: url(:/images/bat.jpg);")
+        self.label_5.setPixmap(QPixmap(u":/images/bat.jpg"))
+        self.label_5.setScaledContents(True)
+        self.label_5.setWordWrap(False)
+
+        self.horizontalLayout_12.addWidget(self.label_5)
+
+        self.verticalLayout_22 = QVBoxLayout()
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.label_8 = QLabel(self.solved_examples_page)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setStyleSheet(u"padding:10px;\n"
 "background-color:white;\n"
 "color:black;\n"
 "font: 75 14pt \"Arial\";")
 
-        self.verticalLayout_20.addWidget(self.label_5)
+        self.verticalLayout_22.addWidget(self.label_8)
 
-        self.line_9 = QFrame(self.solved_examples_page)
-        self.line_9.setObjectName(u"line_9")
-        self.line_9.setFrameShape(QFrame.HLine)
-        self.line_9.setFrameShadow(QFrame.Sunken)
+        self.line_10 = QFrame(self.solved_examples_page)
+        self.line_10.setObjectName(u"line_10")
+        self.line_10.setFrameShape(QFrame.HLine)
+        self.line_10.setFrameShadow(QFrame.Sunken)
 
-        self.verticalLayout_20.addWidget(self.line_9)
+        self.verticalLayout_22.addWidget(self.line_10)
 
-        self.pushButton_4 = QPushButton(self.solved_examples_page)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.pushButton_5 = QPushButton(self.solved_examples_page)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.pushButton_5.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "padding-top:10px;\n"
 "")
-        self.pushButton_4.setIcon(icon1)
-        self.pushButton_4.setIconSize(QSize(300, 230))
+        self.pushButton_5.setIcon(icon1)
+        self.pushButton_5.setIconSize(QSize(300, 230))
 
-        self.verticalLayout_20.addWidget(self.pushButton_4)
-
-
-        self.horizontalLayout_11.addLayout(self.verticalLayout_20)
-
-        self.verticalLayout_21 = QVBoxLayout()
-        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
-
-        self.horizontalLayout_11.addLayout(self.verticalLayout_21)
+        self.verticalLayout_22.addWidget(self.pushButton_5)
 
 
-        self.verticalLayout_13.addLayout(self.horizontalLayout_11)
+        self.horizontalLayout_12.addLayout(self.verticalLayout_22)
+
+
+        self.verticalLayout_13.addLayout(self.horizontalLayout_12)
 
         self.stackedWidget.addWidget(self.solved_examples_page)
 
@@ -1383,7 +1372,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.Home.setCurrentIndex(1)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1408,6 +1397,11 @@ class Ui_MainWindow(object):
         self.total_count_btn.setText(QCoreApplication.translate("MainWindow", u"Count", None))
         self.single_count_btn.setText(QCoreApplication.translate("MainWindow", u"single count", None))
         self.prev_note.setText(QCoreApplication.translate("MainWindow", u"<<", None))
+        self.note_content.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/atom.ico\" /></p></body></html>", None))
         self.note1_label_fmlist.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
         self.note1_label_se.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
         self.next_note.setText(QCoreApplication.translate("MainWindow", u">>", None))
@@ -1426,127 +1420,12 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" dir='rtl' style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#diffraction\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#aa0000;\">Diffraction    </span></a></p>\n"
-"<p align=\"center\" dir='rtl' style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#aa0000;\">Fibre</span></a><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: under"
-                        "line; color:#0000ff;\"> </span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;\">Optics   </span></a></p>\n"
-"<p align=\"center\" dir='rtl' style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;\">ElectroDynamics</span></a></p>\n"
-"<p align=\"center\" dir='rtl' style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;\">    Relativity   </span></a></p>\n"
-"<p align=\"center\" dir='rtl' style=\" margin-top:12px; margin-bottom:12px; margin-lef"
-                        "t:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; font-weight:600; text-decoration: underline; color:#0000ff;\"> Physics of Sensors</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Fibre Diffraction</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">1.</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">Grating Formula</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin"
-                        "-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">(a+b) = Grating element</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">\u0398 = Angle of Diffraction</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><s"
-                        "pan style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">n = order of Diffraction</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">\u03bb = Wavelength of wave getting Diffracted</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">2. Grating element</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 (a+b) = "
-                        "</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"9\" height=\"28\" /> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">Where:</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">(a+b) = Grating element</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">N = Number of "
-                        "lines per unit length of Grating </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">3. Resolving power of Grating (R.P)</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 R.P = </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png\" width=\"13\" height=\"29\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= mN</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">Where:</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-"
-                        "block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">N = Number of lines per unit length of Grating </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Times New Roman,serif';\">m = order of Diffraction </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"8\" height=\"20\" /><span style=\" f"
-                        "ont-family:'Times New Roman,serif';\">\u00a0= Mean Wavelength of sources to be resolved </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Difference between Wavelength of Sources to be resolved</span> </p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Fibre Optics</s"
-                        "pan> </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">t1. Numerical Aperture (N.A)</span> </p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">N.A = </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"32\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif'; vertical-align:sub;\">0 </span><span style=\" font-family:'Times New Roman,serif';\">=</span><span style=\" font-family:'Times New Roman,serif'; vertical-align:sub;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png\" width=\"70\" height=\"25\" /> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; t"
-                        "ext-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">Where:</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Acceptance angle</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"_Hlk82195492\"></a><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New "
-                        "Roman,serif';\">\u00a0= Refractive Index of Core</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Refractive Index of cladding </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0</span> </p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">N.A =</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtml"
-                        "clip1/01/clip_image012.png\" width=\"35\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif'; vertical-align:sub;\">0</span><span style=\" font-family:'Times New Roman,serif';\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png\" width=\"4\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png\" width=\"43\" height=\"46\" /> </p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">1.</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-family:'Time"
-                        "s New Roman,serif';\">Numerical Aperture (N.A) of fiber in other medium</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Acceptance angle</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Refractive I"
-                        "ndex of Core</span> </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Refractive Index of cladding </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png\" width=\"16\" height=\"20\" /><span style=\" font-family:'Times New Roman,serif';\">\u00a0= Refractive index of another outer medium</span> </p>\n"
-"<p"
-                        " style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Times New Roman,serif';\">\u00a0</span> </p></body></html>", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"This Section Shows a list of Formulas", None))
         self.pushButton_3.setText("")
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
-        self.full_formula_list_content_2.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#diffraction\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Diffraction</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Fibre Optics</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-siz"
-                        "e:11pt; text-decoration: underline; color:#0000ff;\">ElectroDynamics</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Relativity</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"#fibreoptics\"><span style=\" font-size:11pt; text-decoration: underline; color:#0000ff;\">Physics of Sensors</span></a></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Diffraction</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS S"
-                        "hell Dlg 2'; font-size:10pt; font-style:italic;\">1.Grating Formula</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">(a+b) = Grating element</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u0398 = Angle of Diffraction</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">n = order of Diffraction</span></p>\n"
-""
-                        "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'Calibri,sans-serif,serif'; font-size:10pt; font-style:italic;\">\u03bb = Wavelength of wave getting Diffracted</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">2. Grating element</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;\">\u00a0\u00a0 (a+b) = </span><img src=\"file:///C:/User"
-                        "s/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"8\" height=\"26\" /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">Where:</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">(a+b) = Grating element</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">N = Number of lines per unit length of Grating </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px"
-                        "; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">3. Resolving power of Grating (R.P)</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt; font-style:italic;\"> </span><span style=\" font-family:'Calibri,sans-serif'; font-size:14pt; font-weight:600;\">R.P = </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"13\" height=\"27\" /><span style=\" font-family:'Calibri,sans-serif'; font-size:14pt; font-weight:600;\">\u00a0= mN</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:"
-                        "0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">Where:</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">N = Number of lines per unit length of Grating </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">m = order of Diffraction </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><img src=\"file:///C:/Users/CYBERL~1"
-                        "/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"8\" height=\"19\" /><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0= Mean Wavelength of sources to be resolved </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:10pt;\">\u00b7</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"16\" height=\"19\" /><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\">\u00a0= Difference between Wavelength of Sources to be resolved</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:10pt; font-style:italic;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-bloc"
-                        "k-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:14pt; font-weight:600; font-style:italic;\">Formula List for Fibre Optics</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:10pt; font-style:italic;\">t1. Numerical Aperture (N.A)</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2,sans-serif'; font-size:10pt; font-style:italic;\">N.A =</span><span style=\" fo"
-                        "nt-size:10pt; font-style:italic;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"27\" height=\"17\" /><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\">0 </span><span style=\" font-size:10pt; font-style:italic;\">=</span><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png\" width=\"59\" height=\"21\" /><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">Where:</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0"
-                        "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Acceptance angle</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"_Hlk82195492\"></a><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"14\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of Core</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol"
-                        "'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of cladding </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">N.A =</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png\" width=\"30\" height=\"17\" /><span style=\" font-size:10pt; font-style:italic; vertical-align:sub;\">0</span><span style=\" font-size:11pt; fon"
-                        "t-style:italic;\"> </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png\" width=\"3\" height=\"17\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png\" width=\"35\" height=\"43\" /><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">\u00a0</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-style:italic;\">1.</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:11pt; font-style:italic;\">Numerical Aperture (N.A) of fiber in other medium</span><span style=\" font-"
-                        "size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Acceptance angle</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png\" width=\"14\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Re"
-                        "fractive Index of Core</span><span style=\" font-size:11pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style:italic;\">\u00a0= Refractive Index of cladding </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:11pt;\">\u00b7</span><span style=\" font-size:7pt;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png\" width=\"15\" height=\"19\" /><span style=\" font-size:11pt; font-style"
-                        ":italic;\">\u00a0= Refractive index of another outer medium</span><span style=\" font-size:11pt;\"> </span></p></body></html>", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Solved Examples Section", None))
-        self.pushButton_4.setText("")
+        self.label_5.setText("")
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Solved Examples Section", None))
+        self.pushButton_5.setText("")
         self.main_note_btn.setText(QCoreApplication.translate("MainWindow", u"NOTE", None))
         self.nxt.setText(QCoreApplication.translate("MainWindow", u"Next", None))
         self.prev.setText(QCoreApplication.translate("MainWindow", u"Previous", None))

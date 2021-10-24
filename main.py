@@ -3,6 +3,7 @@
 import os,sys
 import sqlite3
 import math
+import numpy as np
 from PySide2 import QtCore
 from PySide2.QtCore    import *
 from PySide2.QtGui     import *
@@ -128,15 +129,14 @@ class MainWindow(QMainWindow):
             self.ui.formula_list_content.setText(str(result[4]))
             self.ui.solved_examples_content.setText(str(result[3]))
             MainWindow.page_id = prev_id
-            
-
-            
-    
+                       
     def get_count(self):
         sql = "SELECT COUNT(*) FROM Topics"
         MainWindow.controller.execute(sql)
         result = MainWindow.controller.fetchall() 
-        self.ui.total_count_btn.setText(str(result))
+        self.ui.total_count_btn.setText(str(result[0][0]))
+        main_result = result[0][0]
+        return main_result   
     
     def navigate(self):
         sql = 'SELECT * FROM Topics'
@@ -228,13 +228,13 @@ class MainWindow(QMainWindow):
             self.ui.update_note_content.setText("Record Deleted Successfully... \n Click Refresh Button to Continue ==>")
             self.ui.update_solved_examples_content.setText("Record Deleted Successfully... \n Click Refresh Button to Continue ==>")
             self.ui.update_formula_list_content.setText("Record Deleted Successfullly... \n Click Refresh Button to Continue ==>")
-            
-        
+          
    
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
+    print(type(window.get_count()))
     sys.exit(app.exec_())
         
 #executing the application 
