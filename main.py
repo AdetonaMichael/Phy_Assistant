@@ -55,23 +55,22 @@ class MainWindow(QMainWindow):
         
     #fucntion for managing myown buttons
     def handel_buttons(self):
-        self.ui.calculate_gravity.clicked.connect(self.cal_force_of_gravity)
         self.ui.next_note.clicked.connect(self.next_page)
         self.ui.prev_note.clicked.connect(self.prev_page)
         self.ui.update_update_btn.clicked.connect(self.update)
         self.ui.update_delete_btn.clicked.connect(self.delete)
         self.ui.update_add_btn.clicked.connect(self.add)
         self.ui.update_refresh_btn.clicked.connect(self.refresh)
+        self.ui.momentum_calculate_anser.clicked.connect(self.cal_momentum)
         
-    #function to calculate the force of gravity
-    def cal_force_of_gravity(self):
-        g,m1,m2,r = 6.67*math.pow(10,-34),0,0,0
-        m1 = float(self.ui.gravity_m1.text())
-        m2 = float(self.ui.gravity_m2.text())
-        r  = float(self.ui.gravity_r.text())
-        f = g*m1*m2/r**2
-        self.ui.gravity_answer.setText(str(f))
-    
+    #calculate momentum function
+    def cal_momentum(self):
+    #    p =  self.ui.momentum_input.text()
+       m =  float(self.ui.momentum_mass_input.text())
+       v =  float(self.ui.momentum_velocity_input.text())
+       ans = m*v
+       self.ui.momentum_answer.setText(str(ans))
+       
       #function to pull all data from database
     def pullData(self):
        sql = "SELECT * FROM Topics where id = %d"%(MainWindow.page_id)

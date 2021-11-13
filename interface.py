@@ -13,6 +13,7 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 from custom_qstacked_widgets import *
 from Custom_Widgets.Widgets import QCustomSlideMenu
+from PySide2.QtWebEngineWidgets import QWebEngineView
 
 import icons_rc
 import images_rc
@@ -21,7 +22,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1697, 889)
+        MainWindow.resize(1697, 879)
         icon = QIcon()
         icon.addFile(u":/icons/icons/atom.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -951,70 +952,68 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1538, 698))
-        self.label_14 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_14.setObjectName(u"label_14")
-        self.label_14.setGeometry(QRect(70, 70, 61, 31))
-        self.label_14.setStyleSheet(u"color:rgb(255, 255, 255);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.label_15 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_15.setObjectName(u"label_15")
-        self.label_15.setGeometry(QRect(520, 130, 41, 31))
-        self.label_15.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.label_16 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_16.setObjectName(u"label_16")
-        self.label_16.setGeometry(QRect(220, 100, 51, 41))
-        self.label_16.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.label_17 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_17.setObjectName(u"label_17")
-        self.label_17.setGeometry(QRect(10, 110, 201, 31))
-        self.label_17.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.gravity_r = QLineEdit(self.scrollAreaWidgetContents_2)
-        self.gravity_r.setObjectName(u"gravity_r")
-        self.gravity_r.setGeometry(QRect(270, 160, 71, 31))
-        self.gravity_m1 = QLineEdit(self.scrollAreaWidgetContents_2)
-        self.gravity_m1.setObjectName(u"gravity_m1")
-        self.gravity_m1.setGeometry(QRect(280, 110, 71, 31))
-        self.gravity_m2 = QLineEdit(self.scrollAreaWidgetContents_2)
-        self.gravity_m2.setObjectName(u"gravity_m2")
-        self.gravity_m2.setGeometry(QRect(420, 110, 71, 31))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1488, 688))
+        self.line_9 = QFrame(self.scrollAreaWidgetContents_2)
+        self.line_9.setObjectName(u"line_9")
+        self.line_9.setGeometry(QRect(0, 290, 1531, 16))
+        self.line_9.setFrameShape(QFrame.HLine)
+        self.line_9.setFrameShadow(QFrame.Sunken)
+        self.label_6 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(0, 0, 241, 31))
+        self.label_6.setStyleSheet(u"color: rgb(255, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 75 10pt \"MS Shell Dlg 2\";")
+        self.label_10 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setGeometry(QRect(80, 60, 81, 31))
+        self.label_10.setStyleSheet(u"font: 75 10pt \"MS Shell Dlg 2\";\n"
+"font: 8pt \"MS Shell Dlg 2\";")
+        self.momentum_input = QLineEdit(self.scrollAreaWidgetContents_2)
+        self.momentum_input.setObjectName(u"momentum_input")
+        self.momentum_input.setGeometry(QRect(120, 110, 71, 31))
+        self.label_11 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setGeometry(QRect(30, 110, 81, 31))
+        self.label_11.setStyleSheet(u"font: 75 10pt \"MS Shell Dlg 2\";\n"
+"font: 8pt \"MS Shell Dlg 2\";")
+        self.momentum_mass_input = QLineEdit(self.scrollAreaWidgetContents_2)
+        self.momentum_mass_input.setObjectName(u"momentum_mass_input")
+        self.momentum_mass_input.setGeometry(QRect(120, 160, 71, 31))
+        self.label_12 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setGeometry(QRect(30, 160, 81, 31))
+        self.label_12.setStyleSheet(u"font: 75 10pt \"MS Shell Dlg 2\";\n"
+"font: 8pt \"MS Shell Dlg 2\";")
+        self.momentum_answer = QLineEdit(self.scrollAreaWidgetContents_2)
+        self.momentum_answer.setObjectName(u"momentum_answer")
+        self.momentum_answer.setGeometry(QRect(230, 110, 171, 31))
+        self.momentum_answer.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 0, 0);\n"
+"border-color: rgb(255, 0, 0);")
+        self.momentum_velocity_input = QLineEdit(self.scrollAreaWidgetContents_2)
+        self.momentum_velocity_input.setObjectName(u"momentum_velocity_input")
+        self.momentum_velocity_input.setGeometry(QRect(120, 210, 71, 31))
+        self.label_21 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(30, 210, 81, 31))
+        self.label_21.setStyleSheet(u"font: 75 10pt \"MS Shell Dlg 2\";\n"
+"font: 8pt \"MS Shell Dlg 2\";")
+        self.label_13 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setGeometry(QRect(230, 70, 171, 31))
+        self.textBrowser = QTextBrowser(self.scrollAreaWidgetContents_2)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setGeometry(QRect(440, 10, 1091, 261))
         self.line_3 = QFrame(self.scrollAreaWidgetContents_2)
         self.line_3.setObjectName(u"line_3")
-        self.line_3.setGeometry(QRect(50, 40, 111, 31))
-        self.line_3.setFrameShape(QFrame.HLine)
+        self.line_3.setGeometry(QRect(420, 0, 20, 301))
+        self.line_3.setFrameShape(QFrame.VLine)
         self.line_3.setFrameShadow(QFrame.Sunken)
-        self.label_18 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_18.setObjectName(u"label_18")
-        self.label_18.setGeometry(QRect(30, 10, 151, 41))
-        self.label_18.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"color: rgb(255, 255, 255);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.label_19 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(230, 160, 41, 31))
-        self.label_19.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.line_4 = QFrame(self.scrollAreaWidgetContents_2)
-        self.line_4.setObjectName(u"line_4")
-        self.line_4.setGeometry(QRect(100, 140, 401, 21))
-        self.line_4.setFrameShape(QFrame.HLine)
-        self.line_4.setFrameShadow(QFrame.Sunken)
-        self.label_20 = QLabel(self.scrollAreaWidgetContents_2)
-        self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(360, 110, 51, 31))
-        self.label_20.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.gravity_answer = QLabel(self.scrollAreaWidgetContents_2)
-        self.gravity_answer.setObjectName(u"gravity_answer")
-        self.gravity_answer.setGeometry(QRect(580, 120, 191, 61))
-        self.gravity_answer.setStyleSheet(u"color: rgb(255, 0, 0);\n"
-"font: 75 20pt \"MS Shell Dlg 2\";")
-        self.calculate_gravity = QPushButton(self.scrollAreaWidgetContents_2)
-        self.calculate_gravity.setObjectName(u"calculate_gravity")
-        self.calculate_gravity.setGeometry(QRect(800, 130, 111, 51))
+        self.momentum_calculate_anser = QPushButton(self.scrollAreaWidgetContents_2)
+        self.momentum_calculate_anser.setObjectName(u"momentum_calculate_anser")
+        self.momentum_calculate_anser.setGeometry(QRect(230, 150, 81, 31))
+        self.momentum_calculate_anser.setStyleSheet(u"background-color: rgb(0, 85, 127);")
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_2)
 
         self.verticalLayout_11.addWidget(self.scrollArea)
@@ -1037,7 +1036,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.full_formula_list_content = QTextBrowser(self.formula_list_page)
+        self.full_formula_list_content = QWebEngineView(self.formula_list_page)
         self.full_formula_list_content.setObjectName(u"full_formula_list_content")
         self.full_formula_list_content.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
@@ -1372,7 +1371,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.Home.setCurrentIndex(1)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1406,21 +1405,64 @@ class Ui_MainWindow(object):
         self.note1_label_se.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
         self.next_note.setText(QCoreApplication.translate("MainWindow", u">>", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Calculate Answer", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"R^2", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"=", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"M1=", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"G=6.67x10^-34", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"F=Gm1m2", None))
-        self.label_19.setText(QCoreApplication.translate("MainWindow", u"R=", None))
-        self.label_20.setText(QCoreApplication.translate("MainWindow", u"M2=", None))
-        self.gravity_answer.setText(QCoreApplication.translate("MainWindow", u"0", None))
-        self.calculate_gravity.setText(QCoreApplication.translate("MainWindow", u"Calculate", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"          MOMENTUM CALCULATOR   ", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"      P = mv", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"  momentum P =", None))
+        self.momentum_mass_input.setText("")
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"  mass  M =", None))
+        self.momentum_answer.setText("")
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"    velocity V = ", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"    ANSWER", None))
+        self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Calculator Use</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Choose a calculation for momentum p, mass m or velocity v. Enter the other two values and the calculator will solve for the third.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margi"
+                        "n-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Momentum Equation For the Calculation</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600; font-style:italic;\">p = mv</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">where:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+                        "indent:0px; font-size:8pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">p = </span><span style=\" font-size:8pt;\">momentum</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">m</span><span style=\" font-size:8pt;\"> = mass</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">v</span><span style=\" font-size:8pt;\"> = velocity</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent"
+                        ":0; text-indent:0px;\"><span style=\" font-size:8pt;\">The Momentum Calculator uses the formula </span><span style=\" font-size:8pt; font-weight:600;\">P = MV, </span><span style=\" font-size:8pt;\">or momentum (</span><span style=\" font-size:8pt; font-weight:600;\">p</span><span style=\" font-size:8pt;\">) is qual to mass (</span><span style=\" font-size:8pt; font-weight:600;\">m</span><span style=\" font-size:8pt;\">) times velocity (</span><span style=\" font-size:8pt; font-weight:600;\">v</span><span style=\" font-size:8pt;\">). The Calculator can use any two of the values to calculate the third.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600;\">Momentum calculations:</span></p>\n"
+"<p style=\"-qt-pa"
+                        "ragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Solving for momentum, mass or velocity we can use the following formulas</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate </span><span style=\" font-size:8pt; font-weight:600;\">P </span><span style=\" font-size:8pt;\">given </span><span style=\" font-size:8pt; font-weight:600;\">M</span><span style=\" font-size:8pt;\"> and </span><span style=\" font-size:8pt; font-weight:600;\">V</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate Momen"
+                        "tum Given Mass and Velocity</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; font-style:italic;\">P = MV</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate </span><span style=\" font-size:8pt; font-weight:600;\">M </span><span style=\" font-size:8pt;\">given </span><span style=\" font-size:8pt; font-weight:600;\">P</span><span style=\" font-size:8pt;\"> and </span><span style=\" font-size:8pt; font-weight:600;\">V</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate Mass "
+                        "given Momentum and Velocity</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600; font-style:italic;\">M = P/V</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate </span><span style=\" font-size:8pt; font-weight:600;\">V </span><span style=\" font-size:8pt;\">given </span><span style=\" font-size:8pt; font-weight:600;\">P</span><span style=\" font-size:8pt;\"> and </span><span style=\" font-size:8pt; font-weight:600;\">M</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -q"
+                        "t-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Calculate Velocity given Momentum and Mass</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; font-weight:600; font-style:italic;\">V= P/M</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.momentum_calculate_anser.setText(QCoreApplication.translate("MainWindow", u"Calculate", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
         self.full_formula_list_content.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png\" width=\"266\" height=\"49\" /> </p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"This Section Shows a list of Formulas", None))
         self.pushButton_3.setText("")
         self.label_5.setText("")
