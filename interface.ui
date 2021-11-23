@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1697</width>
-    <height>879</height>
+    <height>992</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -914,7 +914,7 @@ padding:5px;</string>
              <item>
               <widget class="QStackedWidget" name="stackedWidget">
                <property name="currentIndex">
-                <number>2</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="page1">
                 <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -1084,6 +1084,26 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
 color: rgb(0, 0, 0);
 font: 75 14pt &quot;Arial&quot;;</string>
                        </property>
+                       <property name="html">
+                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Equations with automatic AMS numbering&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Equation:\begin{equation}E = mc^2\end{equation}Equation*:\begin{equation*}E = mc^2\end{equation*}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Brackets:\[E = mc^2\]Brackets tagged:\[E = mc^2\tag{x}\]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Split:\begin{equation}\begin{split} a&amp;amp; =b+c-d\\ &amp;amp; \quad +e-f\\ &amp;amp; =g+h\\ &amp;amp; =i \end{split} \end{equation} &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Multline:\begin{multline}  a+b+c+d+e+f+g\\  M+N+O+P+Q\\  R+S+T\\  u+v+w+x+y+z\end{multline}Multline*:\begin{multline*}  a+b+c+d+e+f+g\\  M+N+O+P+Q\\  R+S+T\\  u+v+w+x+y+z\end{multline*}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gather:\begin{gather} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather} Gather*:\begin{gather*} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather*} &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Align:\begin{align} a_1&amp;amp; =b_1+c_1\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align}Align*:\begin{align*} a_1&amp;amp; =b_1+c_1\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align*}Align:\begin{align} a_{11}&amp;amp; =b_{11}&amp;amp; a_{12}&amp;amp; =b_{12}\\ a_{21}&amp;amp; =b_{21}&amp;amp; a_{22}&amp;amp; =b_{22}+c_{22} \end{align}Align with \notag and \tag:\begin{align} a_{11}&amp;amp; =b_{11}&amp;amp; a_{12}&amp;amp; =b_{12}\notag\\ a_{21}&amp;amp; =b_{21}&amp;amp; a_{22}&amp;amp; =b_{22}+c_{22} \tag{y}\end{align}Align* with \tag:\begin{align*} a_1&amp;amp; =b_1+c_1\tag{z}\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align*}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
                       </widget>
                      </item>
                      <item>
@@ -1161,6 +1181,15 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                  </item>
                  <item>
                   <widget class="QScrollArea" name="scrollArea">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="verticalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOff</enum>
+                   </property>
+                   <property name="sizeAdjustPolicy">
+                    <enum>QAbstractScrollArea::AdjustToContents</enum>
+                   </property>
                    <property name="widgetResizable">
                     <bool>true</bool>
                    </property>
@@ -1169,15 +1198,15 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>98</width>
-                      <height>28</height>
+                      <width>1538</width>
+                      <height>771</height>
                      </rect>
                     </property>
                     <widget class="Line" name="line_9">
                      <property name="geometry">
                       <rect>
                        <x>0</x>
-                       <y>290</y>
+                       <y>350</y>
                        <width>1531</width>
                        <height>16</height>
                       </rect>
@@ -1212,6 +1241,12 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
                        <width>81</width>
                        <height>31</height>
                       </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>10</verstretch>
+                      </sizepolicy>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
@@ -1342,7 +1377,7 @@ font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
                        <x>440</x>
                        <y>10</y>
                        <width>1091</width>
-                       <height>261</height>
+                       <height>331</height>
                       </rect>
                      </property>
                      <property name="html">
@@ -1350,7 +1385,7 @@ font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Calculator Use&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#aa0000;&quot;&gt;CALCULATOR USE&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Choose a calculation for momentum p, mass m or velocity v. Enter the other two values and the calculator will solve for the third.&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1413,6 +1448,273 @@ p, li { white-space: pre-wrap; }
                       <string>Calculate</string>
                      </property>
                     </widget>
+                    <widget class="QLabel" name="label_9">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>380</y>
+                       <width>241</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>              GRAVITY CALCULATOR</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>60</x>
+                       <y>440</y>
+                       <width>151</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>         F = G m1*m2/r^2</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_15">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>500</y>
+                       <width>81</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>   Gravity G =</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_16">
+                     <property name="geometry">
+                      <rect>
+                       <x>40</x>
+                       <y>550</y>
+                       <width>81</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>  Mass m1 = </string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>30</x>
+                       <y>600</y>
+                       <width>91</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>     Mass m2 =</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="mi_input">
+                     <property name="geometry">
+                      <rect>
+                       <x>140</x>
+                       <y>550</y>
+                       <width>71</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="m2_input">
+                     <property name="geometry">
+                      <rect>
+                       <x>140</x>
+                       <y>600</y>
+                       <width>71</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_18">
+                     <property name="geometry">
+                      <rect>
+                       <x>30</x>
+                       <y>650</y>
+                       <width>91</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>     Radius r =</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="g_radius">
+                     <property name="geometry">
+                      <rect>
+                       <x>140</x>
+                       <y>650</y>
+                       <width>71</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_19">
+                     <property name="geometry">
+                      <rect>
+                       <x>240</x>
+                       <y>500</y>
+                       <width>171</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>    ANSWER</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="g_answer_input">
+                     <property name="geometry">
+                      <rect>
+                       <x>240</x>
+                       <y>550</y>
+                       <width>171</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+border-color: rgb(255, 0, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                    <widget class="QPushButton" name="g_calculate_answer">
+                     <property name="geometry">
+                      <rect>
+                       <x>240</x>
+                       <y>590</y>
+                       <width>91</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(0, 85, 127);</string>
+                     </property>
+                     <property name="text">
+                      <string>Calculate</string>
+                     </property>
+                    </widget>
+                    <widget class="QTextBrowser" name="textBrowser_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>440</x>
+                       <y>380</y>
+                       <width>1091</width>
+                       <height>361</height>
+                      </rect>
+                     </property>
+                     <property name="html">
+                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#aa0000;&quot;&gt;CALCULATOR USE&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Choose a calculation for gravitational force F, mass m and radius r. Enter the other two values and the calculator will solve for the third.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Gravitational Force Equation For the Calculation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic;&quot;&gt;F = Gm1m2/R&lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;where:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;G = &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Universal Gravitational Data&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;F = &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Gravitational Force&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;m1, m2&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; = mass&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;R&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; = Radius&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;The Force of gravity Calculator uses the formula &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;F = Gm1m2/R&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;or Force of attraction (&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;F&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;) between two bodies (&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;m1&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;) &amp;amp; (&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;m2&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;) is directrly proportional to the product of their masses and inversly proportional to to the square of the distance apart (&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;). Calculator can use any three of the values to calculate the fourth.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Gravitational Force calculations:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Solving for force of gravity, mass or radius we can use the following formulas&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;F &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;given &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;m1 &amp;amp; m2&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;R&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate foce of gravity Given Mass and distance apart&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;F= m1m2/r&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;M &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;given &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;V&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate Mass given Momentum and Velocity&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;M = P/V&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;V &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;given &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;M&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Calculate Velocity given Momentum and Mass&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;V= P/M&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="Line" name="line_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>420</x>
+                       <y>310</y>
+                       <width>20</width>
+                       <height>431</height>
+                      </rect>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                    </widget>
+                    <widget class="Line" name="line_11">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>740</y>
+                       <width>1531</width>
+                       <height>16</height>
+                      </rect>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_7">
+                     <property name="geometry">
+                      <rect>
+                       <x>120</x>
+                       <y>500</y>
+                       <width>101</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>    6.626X10^-34</string>
+                     </property>
+                    </widget>
                    </widget>
                   </widget>
                  </item>
@@ -1423,38 +1725,9 @@ p, li { white-space: pre-wrap; }
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_14">
                    <item>
-                    <widget class="QLabel" name="label_7">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: rgb(85, 0, 0);
-color: rgb(255, 255, 255);
-font: 11pt &quot;hooge 05_54&quot;;</string>
-                     </property>
-                     <property name="text">
-                      <string>Formula List</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
                     <layout class="QHBoxLayout" name="horizontalLayout_4">
                      <item>
-                      <widget class="QWebEngineView" name="full_formula_list_content">
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-font: 12pt &quot;Times New Roman&quot;;</string>
-                       </property>
-                       <property name="html">
-                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;$$u = \int_{-\infty}^{\infty}(awesome)\cdot du$$&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;file:///C:/Users/CYBERL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png&quot; width=&quot;266&quot; height=&quot;49&quot; /&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                       </property>
-                      </widget>
+                      <widget class="QWebEngineView" name="widget_2" native="true"/>
                      </item>
                      <item>
                       <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1501,9 +1774,6 @@ padding-top:10px;
                         </widget>
                        </item>
                       </layout>
-                     </item>
-                     <item>
-                      <layout class="QVBoxLayout" name="verticalLayout_15"/>
                      </item>
                     </layout>
                    </item>
@@ -1917,13 +2187,14 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
   <customwidget>
    <class>QCustomSlideMenu</class>
    <extends>QWidget</extends>
-   <header location="global">Custom_Widgets.Widgets.h</header>
+   <header>Custom_Widgets.Widgets.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>QWebEngineView</class>
-   <extends>QTextBrowser</extends>
-   <header>qwebengineview.h</header>
+   <extends>QWidget</extends>
+   <header>PySide2.QtWebEngineWidgets</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>

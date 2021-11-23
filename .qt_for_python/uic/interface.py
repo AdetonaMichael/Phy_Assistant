@@ -3,17 +3,18 @@
 ################################################################################
 ## Form generated from reading UI file 'interface.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 6.1.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide6.QtCore import *  # type: ignore
+from PySide6.QtGui import *  # type: ignore
+from PySide6.QtWidgets import *  # type: ignore
+
 from Custom_Widgets.Widgets import QCustomSlideMenu
 from PySide2.QtWebEngineWidgets import QWebEngineView
-from custom_qstacked_widgets import *
+
 import icons_rc
 import images_rc
 
@@ -566,10 +567,9 @@ class Ui_MainWindow(object):
         self.Home = QTabWidget(self.centralwidget)
         self.Home.setObjectName(u"Home")
         font = QFont()
-        font.setFamily(u"Tahoma")
+        font.setFamilies([u"Tahoma"])
         font.setPointSize(10)
         font.setBold(True)
-        font.setWeight(75)
         self.Home.setFont(font)
         self.Home.setStyleSheet(u"padding:0px;")
         self.tab = QWidget()
@@ -658,7 +658,6 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setPointSize(14)
         font1.setBold(True)
-        font1.setWeight(75)
         self.label_2.setFont(font1)
         self.label_2.setAlignment(Qt.AlignCenter)
 
@@ -677,11 +676,10 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.frame)
         self.label.setObjectName(u"label")
         font2 = QFont()
-        font2.setFamily(u"Tahoma")
+        font2.setFamilies([u"Tahoma"])
         font2.setPointSize(14)
         font2.setBold(False)
         font2.setItalic(False)
-        font2.setWeight(50)
         self.label.setFont(font2)
         self.label.setStyleSheet(u"\n"
 "font: 14pt \"Tahoma\";")
@@ -793,11 +791,10 @@ class Ui_MainWindow(object):
         self.note1_label_2 = QLabel(self.page1)
         self.note1_label_2.setObjectName(u"note1_label_2")
         font4 = QFont()
-        font4.setFamily(u"hooge 05_54")
+        font4.setFamilies([u"hooge 05_54"])
         font4.setPointSize(11)
         font4.setBold(False)
         font4.setItalic(False)
-        font4.setWeight(50)
         self.note1_label_2.setFont(font4)
         self.note1_label_2.setStyleSheet(u"background-color:rgb(0, 0, 77);\n"
 "color: rgb(255, 255, 255);\n"

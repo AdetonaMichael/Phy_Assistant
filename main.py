@@ -70,7 +70,10 @@ class MainWindow(QMainWindow):
        v =  float(self.ui.momentum_velocity_input.text())
        ans = m*v
        self.ui.momentum_answer.setText(str(ans))
-       
+    #calculate gravitational force of attraction
+    def cal_gravity(self):
+        pass
+        
       #function to pull all data from database
     def pullData(self):
        sql = "SELECT * FROM Topics where id = %d"%(MainWindow.page_id)
