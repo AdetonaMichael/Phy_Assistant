@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1697, 992)
+        MainWindow.resize(1697, 1087)
         icon = QIcon()
         icon.addFile(u":/icons/icons/atom.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -951,7 +951,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1538, 771))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 98, 28))
         self.line_9 = QFrame(self.scrollAreaWidgetContents_2)
         self.line_9.setObjectName(u"line_9")
         self.line_9.setGeometry(QRect(0, 350, 1531, 16))
@@ -1060,7 +1060,7 @@ class Ui_MainWindow(object):
         self.g_radius.setGeometry(QRect(140, 650, 71, 31))
         self.label_19 = QLabel(self.scrollAreaWidgetContents_2)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(240, 500, 171, 31))
+        self.label_19.setGeometry(QRect(260, 500, 131, 31))
         self.g_answer_input = QLineEdit(self.scrollAreaWidgetContents_2)
         self.g_answer_input.setObjectName(u"g_answer_input")
         self.g_answer_input.setGeometry(QRect(240, 550, 171, 31))
@@ -1086,7 +1086,22 @@ class Ui_MainWindow(object):
         self.line_11.setFrameShadow(QFrame.Sunken)
         self.label_7 = QLabel(self.scrollAreaWidgetContents_2)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(120, 500, 101, 31))
+        self.label_7.setGeometry(QRect(90, 500, 161, 31))
+        self.label_20 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(210, 550, 31, 31))
+        self.label_22 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(210, 600, 31, 31))
+        self.label_23 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(210, 650, 31, 31))
+        self.label_24 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setGeometry(QRect(190, 210, 31, 31))
+        self.label_25 = QLabel(self.scrollAreaWidgetContents_2)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setGeometry(QRect(190, 160, 31, 31))
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_2)
 
         self.verticalLayout_11.addWidget(self.scrollArea)
@@ -1149,24 +1164,23 @@ class Ui_MainWindow(object):
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.horizontalLayout_12 = QHBoxLayout()
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.label_5 = QLabel(self.solved_examples_page)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setAcceptDrops(False)
-        self.label_5.setStyleSheet(u"background-image: url(:/images/bat.jpg);")
-        self.label_5.setPixmap(QPixmap(u":/images/bat.jpg"))
-        self.label_5.setScaledContents(True)
-        self.label_5.setWordWrap(False)
+        self.textBrowser_3 = QTextBrowser(self.solved_examples_page)
+        self.textBrowser_3.setObjectName(u"textBrowser_3")
+        self.textBrowser_3.setEnabled(True)
 
-        self.horizontalLayout_12.addWidget(self.label_5)
+        self.horizontalLayout_12.addWidget(self.textBrowser_3)
 
         self.verticalLayout_22 = QVBoxLayout()
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.label_8 = QLabel(self.solved_examples_page)
         self.label_8.setObjectName(u"label_8")
+        self.label_8.setAutoFillBackground(False)
         self.label_8.setStyleSheet(u"padding:10px;\n"
 "background-color:white;\n"
 "color:black;\n"
 "font: 75 14pt \"Arial\";")
+        self.label_8.setPixmap(QPixmap(u":/images/formu.jpeg"))
+        self.label_8.setScaledContents(True)
 
         self.verticalLayout_22.addWidget(self.label_8)
 
@@ -1426,8 +1440,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.Home.setCurrentIndex(1)
-        self.stackedWidget.setCurrentIndex(1)
+        self.Home.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1586,11 +1600,21 @@ class Ui_MainWindow(object):
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600; font-style:italic;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"    6.626X10^-34", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"6.67430X10^-11 N.M^2/Kg^2", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"    Kg", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"    Kg", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"    m", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"    m", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"    Kg", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"This Section Shows a list of Formulas", None))
         self.pushButton_3.setText("")
-        self.label_5.setText("")
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Solved Examples Section", None))
+        self.textBrowser_3.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/images/formu.jpeg\" /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/images/modern.jpeg\" /></p></body></html>", None))
+        self.label_8.setText("")
         self.pushButton_5.setText("")
         self.main_note_btn.setText(QCoreApplication.translate("MainWindow", u"NOTE", None))
         self.nxt.setText(QCoreApplication.translate("MainWindow", u"Next", None))

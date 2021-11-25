@@ -3,12 +3,13 @@
 import os,sys
 import sqlite3
 import math
-import numpy as np
 from PySide2 import QtCore
 from PySide2.QtCore    import *
 from PySide2.QtGui     import *
 from PySide2.QtWidgets import *
 from PyQt5.QtWidgets   import *
+from win10toast import ToastNotifier
+from PySide2.QtWebEngineWidgets import QWebEngineView
 
 # importation of the Graphical user interface file (GUI fILE)
 from interface import *
@@ -20,7 +21,8 @@ from Custom_Widgets.Widgets import  loadJsonStyle
 class MainWindow(QMainWindow):
     # establishing connection to databse
     db = sqlite3.connect('phy_assistant2.db')
-    page_id = 0
+    page_id = 0.
+    
     
     #creating cursor object for performing database query
     controller = db.cursor()
@@ -32,6 +34,7 @@ class MainWindow(QMainWindow):
         self.handel_buttons()
         self.navigate()
         self.get_count()
+        self.toast = ToastNotifier()
         
         #Applying JSON Stylesheet
         loadJsonStyle(self, self.ui)
@@ -62,7 +65,8 @@ class MainWindow(QMainWindow):
         self.ui.update_add_btn.clicked.connect(self.add)
         self.ui.update_refresh_btn.clicked.connect(self.refresh)
         self.ui.momentum_calculate_anser.clicked.connect(self.cal_momentum)
-        
+        self.ui.g_calculate_answer.clicked.connect(self.cal_gravity)
+
     #calculate momentum function
     def cal_momentum(self):
     #    p =  self.ui.momentum_input.text()
@@ -72,7 +76,15 @@ class MainWindow(QMainWindow):
        self.ui.momentum_answer.setText(str(ans))
     #calculate gravitational force of attraction
     def cal_gravity(self):
-        pass
+        g = 6.67408*math.pow(10,-11)
+        m1 = float(self.ui.mi_input.text())
+        m2 = float(self.ui.m2_input.text())
+        r  = float(self.ui.g_radius.text())
+        f  = (g*m1*m2)
+        dp = math.pow(r,2)
+        ans = f/dp
+        self.ui.g_answer_input.setText(str(ans));
+        self.toast.show_toast(title="Check1", msg="Gravity Calculation Completed Successfully", icon_path=None, threaded=True)
         
       #function to pull all data from database
     def pullData(self):
@@ -169,6 +181,8 @@ class MainWindow(QMainWindow):
             self.ui.update_note_content.setText("OooPs!... \n No Content Exist For Record with Id of {}".format(id))
             self.ui.update_solved_examples_content.setText("OooPs!... \n No Content Exist For Record with Id of {}".format(id))
             self.ui.update_formula_list_content.setText("OooPs!... \n No Content Exist For Record with Id of {}".format(id))
+            self.toast.show_toast(title="Physics Assistant V1.0", msg="Database Refresh Successful", icon_path="icons/atom.ico", threaded=True)
+            
             
 
     # creating function to add data into the database
@@ -191,6 +205,8 @@ class MainWindow(QMainWindow):
             self.ui.update_note_content.setText("Record Added To Database Successfully!.. \n Click the Refresh Button To Continue ==>")
             self.ui.update_solved_examples_content.setText("Record Added To Database Successfully!.. \n Click the Refresh Button To Continue ==>")
             self.ui.update_formula_list_content.setText("Record Added To Database Successfully!.. \n Click the Refresh Button To Continue ==>")
+            self.toast.show_toast(title="Physics Assistant V1.0", msg="Record Successfully Added To The Database", icon_path="icons/atom.ico", threaded=True)
+            
         
     
     def update(self):
@@ -214,6 +230,7 @@ class MainWindow(QMainWindow):
             self.ui.update_note_content.setText("Database Update Was Successful... \n Click Refresh Button to Continue ==>")
             self.ui.update_solved_examples_content.setText("Database Update Was Successful... \n Click Refresh Button to Continue ==>")
             self.ui.update_formula_list_content.setText("Database Update Was Successful... \n Click Refresh Button to Continue ==>")
+            self.toast.show_toast(title="Physics Assistant V1.0", msg="Update To The Database Was Successful", icon_path="icons/atom.ico", threaded=True)
             
     
     def delete(self):
@@ -230,13 +247,31 @@ class MainWindow(QMainWindow):
             self.ui.update_note_content.setText("Record Deleted Successfully... \n Click Refresh Button to Continue ==>")
             self.ui.update_solved_examples_content.setText("Record Deleted Successfully... \n Click Refresh Button to Continue ==>")
             self.ui.update_formula_list_content.setText("Record Deleted Successfullly... \n Click Refresh Button to Continue ==>")
-          
+            self.toast.show_toast(title="Physics Assistant V1.0", msg="Database Record Deleted Successfully!", icon_path="icons/atom.ico", threaded=True)
+            
+    
+class App2(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.title = "Formula List"
+        self.left = 10
+        self.top= 10
+        self.height = 640
+        self.width=460
+        self.initUI()
+        
+    def initUI(self):
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.left, self.top, self.height, self.width)
+        self.label = QLabel("For WebEngine view", self)
+        self.show()
+        
    
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    print(type(window.get_count()))
+    ex = App2()
     sys.exit(app.exec_())
         
 #executing the application 
