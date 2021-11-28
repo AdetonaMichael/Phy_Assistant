@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1697, 1087)
+        MainWindow.resize(1261, 1087)
         icon = QIcon()
         icon.addFile(u":/icons/icons/atom.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -951,7 +951,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 98, 28))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1046, 782))
         self.line_9 = QFrame(self.scrollAreaWidgetContents_2)
         self.line_9.setObjectName(u"line_9")
         self.line_9.setGeometry(QRect(0, 350, 1531, 16))
@@ -1120,37 +1120,6 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.widget_2)
 
-        self.verticalLayout_16 = QVBoxLayout()
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.label_3 = QLabel(self.formula_list_page)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"padding:10px;\n"
-"background-color:white;\n"
-"color:black;\n"
-"font: 75 14pt \"Arial\";")
-
-        self.verticalLayout_16.addWidget(self.label_3)
-
-        self.line_6 = QFrame(self.formula_list_page)
-        self.line_6.setObjectName(u"line_6")
-        self.line_6.setFrameShape(QFrame.HLine)
-        self.line_6.setFrameShadow(QFrame.Sunken)
-
-        self.verticalLayout_16.addWidget(self.line_6)
-
-        self.pushButton_3 = QPushButton(self.formula_list_page)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"padding-top:10px;\n"
-"")
-        self.pushButton_3.setIcon(icon3)
-        self.pushButton_3.setIconSize(QSize(300, 230))
-
-        self.verticalLayout_16.addWidget(self.pushButton_3)
-
-
-        self.horizontalLayout_4.addLayout(self.verticalLayout_16)
-
 
         self.verticalLayout_14.addLayout(self.horizontalLayout_4)
 
@@ -1162,54 +1131,49 @@ class Ui_MainWindow(object):
         self.solved_examples_page.setObjectName(u"solved_examples_page")
         self.verticalLayout_13 = QVBoxLayout(self.solved_examples_page)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.horizontalLayout_12 = QHBoxLayout()
-        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.textBrowser_3 = QTextBrowser(self.solved_examples_page)
-        self.textBrowser_3.setObjectName(u"textBrowser_3")
-        self.textBrowser_3.setEnabled(True)
-
-        self.horizontalLayout_12.addWidget(self.textBrowser_3)
-
-        self.verticalLayout_22 = QVBoxLayout()
-        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_15 = QVBoxLayout()
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.label_8 = QLabel(self.solved_examples_page)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setAutoFillBackground(False)
-        self.label_8.setStyleSheet(u"padding:10px;\n"
-"background-color:white;\n"
-"color:black;\n"
-"font: 75 14pt \"Arial\";")
-        self.label_8.setPixmap(QPixmap(u":/images/formu.jpeg"))
-        self.label_8.setScaledContents(True)
-
-        self.verticalLayout_22.addWidget(self.label_8)
-
-        self.line_10 = QFrame(self.solved_examples_page)
-        self.line_10.setObjectName(u"line_10")
-        self.line_10.setFrameShape(QFrame.HLine)
-        self.line_10.setFrameShadow(QFrame.Sunken)
-
-        self.verticalLayout_22.addWidget(self.line_10)
-
-        self.pushButton_5 = QPushButton(self.solved_examples_page)
-        self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"padding-top:10px;\n"
+        self.label_8.setStyleSheet(u"color:white;\n"
+"background-color:black;\n"
+"font: 75 26pt \"Tahoma\";\n"
 "")
-        self.pushButton_5.setIcon(icon1)
-        self.pushButton_5.setIconSize(QSize(300, 230))
 
-        self.verticalLayout_22.addWidget(self.pushButton_5)
+        self.verticalLayout_15.addWidget(self.label_8)
+
+        self.pushButton_3 = QPushButton(self.solved_examples_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setMinimumSize(QSize(42, 544))
+        self.pushButton_3.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
+"background-color: rgb(0, 0, 0);")
+        icon6 = QIcon()
+        icon6.addFile(u"images/phy_ass.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_3.setIcon(icon6)
+        self.pushButton_3.setIconSize(QSize(730, 490))
+
+        self.verticalLayout_15.addWidget(self.pushButton_3)
+
+        self.label_26 = QLabel(self.solved_examples_page)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setStyleSheet(u"color:white;\n"
+"background-color:black;\n"
+"font: 75 26pt \"Tahoma\";\n"
+"")
+
+        self.verticalLayout_15.addWidget(self.label_26)
 
 
-        self.horizontalLayout_12.addLayout(self.verticalLayout_22)
-
-
-        self.verticalLayout_13.addLayout(self.horizontalLayout_12)
+        self.verticalLayout_13.addLayout(self.verticalLayout_15)
 
         self.stackedWidget.addWidget(self.solved_examples_page)
 
         self.horizontalLayout_2.addWidget(self.stackedWidget)
+
+        self.label_3 = QLabel(self.frame_2)
+        self.label_3.setObjectName(u"label_3")
+
+        self.horizontalLayout_2.addWidget(self.label_3)
 
         self.line = QFrame(self.frame_2)
         self.line.setObjectName(u"line")
@@ -1441,7 +1405,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.Home.setCurrentIndex(0)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1470,28 +1434,20 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/atom.ico\" /></p></body></html>", None))
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px"
+                        ";\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/atom.ico\" /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-weight:600;\">WELCOME TO PHY ASS V1.0</span></p></body></html>", None))
         self.note1_label_fmlist.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
         self.formula_list_content.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:xx-large; font-weight:600;\">Equations with automatic AMS numbering</span></p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Equation:\\begin{equation}E = mc^2\\end{equation}Equation*:\\begin{equation*}E = mc^2\\end{equation*}</p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; m"
-                        "argin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Brackets:\\[E = mc^2\\]Brackets tagged:\\[E = mc^2\\tag{x}\\]</p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Split:\\begin{equation}\\begin{split} a&amp; =b+c-d\\\\ &amp; \\quad +e-f\\\\ &amp; =g+h\\\\ &amp; =i \\end{split} \\end{equation} </p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Multline:\\begin{multline}  a+b+c+d+e+f+g\\\\  M+N+O+P+Q\\\\  R+S+T\\\\  u+v+w+x+y+z\\end{multline}Multline*:\\begin{multline*}  a+b+c+d+e+f+g\\\\  M+N+O+P+Q\\\\  R+S+T\\\\  u+v+w+x+y+z\\end{multline*}</p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Gather:\\begin{gather} a_1=b_1+c_1\\\\ a_2=b_2+c_2-d_2+e_2 \\end{gather} Gather*:\\begin{gather*} a_1=b_1+c_1\\\\ a_2=b_2+c_2-d_2+e_2 \\"
-                        "end{gather*} </p>\n"
-"<hr />\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Align:\\begin{align} a_1&amp; =b_1+c_1\\\\ a_2&amp; =b_2+c_2-d_2+e_2 \\end{align}Align*:\\begin{align*} a_1&amp; =b_1+c_1\\\\ a_2&amp; =b_2+c_2-d_2+e_2 \\end{align*}Align:\\begin{align} a_{11}&amp; =b_{11}&amp; a_{12}&amp; =b_{12}\\\\ a_{21}&amp; =b_{21}&amp; a_{22}&amp; =b_{22}+c_{22} \\end{align}Align with \\notag and \\tag:\\begin{align} a_{11}&amp; =b_{11}&amp; a_{12}&amp; =b_{12}\\notag\\\\ a_{21}&amp; =b_{21}&amp; a_{22}&amp; =b_{22}+c_{22} \\tag{y}\\end{align}Align* with \\tag:\\begin{align*} a_1&amp; =b_1+c_1\\tag{z}\\\\ a_2&amp; =b_2+c_2-d_2+e_2 \\end{align*}</p></body></html>", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.note1_label_se.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
         self.next_note.setText(QCoreApplication.translate("MainWindow", u">>", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Calculate Answer", None))
@@ -1606,21 +1562,15 @@ class Ui_MainWindow(object):
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"    m", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"    m", None))
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"    Kg", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"This Section Shows a list of Formulas", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"                            ABOUT PHY ASSISTANT", None))
         self.pushButton_3.setText("")
-        self.textBrowser_3.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/images/formu.jpeg\" /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/images/modern.jpeg\" /></p></body></html>", None))
-        self.label_8.setText("")
-        self.pushButton_5.setText("")
+        self.label_26.setText("")
+        self.label_3.setText("")
         self.main_note_btn.setText(QCoreApplication.translate("MainWindow", u"NOTE", None))
         self.nxt.setText(QCoreApplication.translate("MainWindow", u"Next", None))
         self.prev.setText(QCoreApplication.translate("MainWindow", u"Previous", None))
-        self.formula_list_btn.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
-        self.solved_examples_btn.setText(QCoreApplication.translate("MainWindow", u"Solved Examples", None))
+        self.formula_list_btn.setText(QCoreApplication.translate("MainWindow", u"Tutorials", None))
+        self.solved_examples_btn.setText(QCoreApplication.translate("MainWindow", u"About", None))
         self.Home.setTabText(self.Home.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"CONTENT", None))
         self.update_update_btn.setText(QCoreApplication.translate("MainWindow", u"UPDATE", None))
         self.update_add_btn.setText(QCoreApplication.translate("MainWindow", u"ADD", None))

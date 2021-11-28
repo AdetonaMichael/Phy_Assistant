@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1697</width>
+    <width>1261</width>
     <height>1087</height>
    </rect>
   </property>
@@ -558,7 +558,7 @@ QAbstractSpinBox {
        <string notr="true">padding:0px;</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -914,7 +914,7 @@ padding:5px;</string>
              <item>
               <widget class="QStackedWidget" name="stackedWidget">
                <property name="currentIndex">
-                <number>3</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="page1">
                 <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -1040,7 +1040,13 @@ font: 75 14pt &quot;Arial&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/icons/icons/atom.ico&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/icons/icons/atom.ico&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;WELCOME TO PHY ASS V1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                     </widget>
                    </item>
@@ -1089,20 +1095,7 @@ font: 75 14pt &quot;Arial&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:14pt; font-weight:72; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Equations with automatic AMS numbering&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Equation:\begin{equation}E = mc^2\end{equation}Equation*:\begin{equation*}E = mc^2\end{equation*}&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Brackets:\[E = mc^2\]Brackets tagged:\[E = mc^2\tag{x}\]&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Split:\begin{equation}\begin{split} a&amp;amp; =b+c-d\\ &amp;amp; \quad +e-f\\ &amp;amp; =g+h\\ &amp;amp; =i \end{split} \end{equation} &lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Multline:\begin{multline}  a+b+c+d+e+f+g\\  M+N+O+P+Q\\  R+S+T\\  u+v+w+x+y+z\end{multline}Multline*:\begin{multline*}  a+b+c+d+e+f+g\\  M+N+O+P+Q\\  R+S+T\\  u+v+w+x+y+z\end{multline*}&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gather:\begin{gather} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather} Gather*:\begin{gather*} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather*} &lt;/p&gt;
-&lt;hr /&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Align:\begin{align} a_1&amp;amp; =b_1+c_1\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align}Align*:\begin{align*} a_1&amp;amp; =b_1+c_1\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align*}Align:\begin{align} a_{11}&amp;amp; =b_{11}&amp;amp; a_{12}&amp;amp; =b_{12}\\ a_{21}&amp;amp; =b_{21}&amp;amp; a_{22}&amp;amp; =b_{22}+c_{22} \end{align}Align with \notag and \tag:\begin{align} a_{11}&amp;amp; =b_{11}&amp;amp; a_{12}&amp;amp; =b_{12}\notag\\ a_{21}&amp;amp; =b_{21}&amp;amp; a_{22}&amp;amp; =b_{22}+c_{22} \tag{y}\end{align}Align* with \tag:\begin{align*} a_1&amp;amp; =b_1+c_1\tag{z}\\ a_2&amp;amp; =b_2+c_2-d_2+e_2 \end{align*}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                      </item>
@@ -1198,8 +1191,8 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>98</width>
-                      <height>28</height>
+                      <width>1046</width>
+                      <height>782</height>
                      </rect>
                     </property>
                     <widget class="Line" name="line_9">
@@ -1794,52 +1787,6 @@ p, li { white-space: pre-wrap; }
                      <item>
                       <widget class="QWebEngineView" name="widget_2" native="true"/>
                      </item>
-                     <item>
-                      <layout class="QVBoxLayout" name="verticalLayout_16">
-                       <item>
-                        <widget class="QLabel" name="label_3">
-                         <property name="styleSheet">
-                          <string notr="true">padding:10px;
-background-color:white;
-color:black;
-font: 75 14pt &quot;Arial&quot;;</string>
-                         </property>
-                         <property name="text">
-                          <string>This Section Shows a list of Formulas</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="Line" name="line_6">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="pushButton_3">
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(255, 255, 255);
-padding-top:10px;
-</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                         <property name="icon">
-                          <iconset resource="../../phy_assistant2/icons.qrc">
-                           <normaloff>:/icons/icons/calculate.ico</normaloff>:/icons/icons/calculate.ico</iconset>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>300</width>
-                           <height>230</height>
-                          </size>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
                     </layout>
                    </item>
                   </layout>
@@ -1849,81 +1796,71 @@ padding-top:10px;
                <widget class="QWidget" name="solved_examples_page">
                 <layout class="QVBoxLayout" name="verticalLayout_13">
                  <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <layout class="QVBoxLayout" name="verticalLayout_15">
                    <item>
-                    <widget class="QTextBrowser" name="textBrowser_3">
-                     <property name="enabled">
-                      <bool>true</bool>
+                    <widget class="QLabel" name="label_8">
+                     <property name="styleSheet">
+                      <string notr="true">color:white;
+background-color:black;
+font: 75 26pt &quot;Tahoma&quot;;
+</string>
                      </property>
-                     <property name="html">
-                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/formu.jpeg&quot; /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/modern.jpeg&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     <property name="text">
+                      <string>                            ABOUT PHY ASSISTANT</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_22">
-                     <item>
-                      <widget class="QLabel" name="label_8">
-                       <property name="autoFillBackground">
-                        <bool>false</bool>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">padding:10px;
-background-color:white;
-color:black;
-font: 75 14pt &quot;Arial&quot;;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="pixmap">
-                        <pixmap resource="../../phy_assistant2/images.qrc">:/images/formu.jpeg</pixmap>
-                       </property>
-                       <property name="scaledContents">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="Line" name="line_10">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton_5">
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(255, 255, 255);
-padding-top:10px;
+                    <widget class="QPushButton" name="pushButton_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>42</width>
+                       <height>544</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(0, 85, 127);
+background-color: rgb(0, 0, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>images/phy_ass.jpg</normaloff>images/phy_ass.jpg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>730</width>
+                       <height>490</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_26">
+                     <property name="styleSheet">
+                      <string notr="true">color:white;
+background-color:black;
+font: 75 26pt &quot;Tahoma&quot;;
 </string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="icon">
-                        <iconset resource="../../phy_assistant2/icons.qrc">
-                         <normaloff>:/icons/icons/atom2.ico</normaloff>:/icons/icons/atom2.ico</iconset>
-                       </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>300</width>
-                         <height>230</height>
-                        </size>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
                    </item>
                   </layout>
                  </item>
                 </layout>
                </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string/>
+               </property>
               </widget>
              </item>
              <item>
@@ -1972,7 +1909,7 @@ padding:10px;</string>
                   <string notr="true">padding:10px;</string>
                  </property>
                  <property name="text">
-                  <string>Formula List</string>
+                  <string>Tutorials</string>
                  </property>
                 </widget>
                </item>
@@ -1982,7 +1919,7 @@ padding:10px;</string>
                   <string notr="true">padding:10px;</string>
                  </property>
                  <property name="text">
-                  <string>Solved Examples</string>
+                  <string>About</string>
                  </property>
                 </widget>
                </item>

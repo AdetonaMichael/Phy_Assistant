@@ -9,23 +9,28 @@ from PySide2.QtGui     import *
 from PySide2.QtWidgets import *
 from PyQt5.QtWidgets   import *
 from win10toast import ToastNotifier
-from PySide2.QtWebEngineWidgets import QWebEngineView
+from PySide2.QtWebEngineWidgets import *
 
 # importation of the Graphical user interface file (GUI fILE)
 from interface import *
 
 # importation of custom widgets to be used in the program
 from Custom_Widgets.Widgets import  loadJsonStyle
-
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 #creating the mainwindow class
 class MainWindow(QMainWindow):
     # establishing connection to databse
-    db = sqlite3.connect('phy_assistant2.db')
+    db = sqlite3.connect(resource_path('phy_assistant2.db'))
     page_id = 0.
-    
     
     #creating cursor object for performing database query
     controller = db.cursor()
+
     
     def __init__(self, parent=None):
         QMainWindow.__init__(self)
@@ -67,6 +72,7 @@ class MainWindow(QMainWindow):
         self.ui.momentum_calculate_anser.clicked.connect(self.cal_momentum)
         self.ui.g_calculate_answer.clicked.connect(self.cal_gravity)
 
+
     #calculate momentum function
     def cal_momentum(self):
     #    p =  self.ui.momentum_input.text()
@@ -85,7 +91,7 @@ class MainWindow(QMainWindow):
         ans = f/dp
         self.ui.g_answer_input.setText(str(ans));
         self.toast.show_toast(title="Check1", msg="Gravity Calculation Completed Successfully", icon_path=None, threaded=True)
-        
+
       #function to pull all data from database
     def pullData(self):
        sql = "SELECT * FROM Topics where id = %d"%(MainWindow.page_id)
@@ -248,30 +254,19 @@ class MainWindow(QMainWindow):
             self.ui.update_solved_examples_content.setText("Record Deleted Successfully... \n Click Refresh Button to Continue ==>")
             self.ui.update_formula_list_content.setText("Record Deleted Successfullly... \n Click Refresh Button to Continue ==>")
             self.toast.show_toast(title="Physics Assistant V1.0", msg="Database Record Deleted Successfully!", icon_path="icons/atom.ico", threaded=True)
-            
-    
-class App2(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.title = "Formula List"
-        self.left = 10
-        self.top= 10
-        self.height = 640
-        self.width=460
-        self.initUI()
-        
-    def initUI(self):
-        self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.height, self.width)
-        self.label = QLabel("For WebEngine view", self)
-        self.show()
-        
+
    
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    ex = App2()
+    # web = QWebEngineView()
+    # web.load(QUrl('https://thegeonerds.com'))
+    # web.show()
+    # web1 = QWebEngineView()
+    # web1.settings().setAttribute(QWebEngineSettings.PluginsEnabled, True)
+    # web1.load(QUrl('formula.pdf'))
+    # web1.show()
     sys.exit(app.exec_())
         
 #executing the application 
