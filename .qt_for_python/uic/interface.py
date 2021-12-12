@@ -666,9 +666,7 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QPushButton(self.frame)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setStyleSheet(u"border:none;")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/oau.jpg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_2.setIcon(icon4)
+        self.pushButton_2.setIcon(icon)
         self.pushButton_2.setIconSize(QSize(200, 120))
 
         self.verticalLayout.addWidget(self.pushButton_2)
@@ -693,13 +691,14 @@ class Ui_MainWindow(object):
 
         self.pushButton = QPushButton(self.frame)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.pushButton.setStyleSheet(u"alternate-background-color: rgb(0, 85, 127);\n"
+"background-color: rgb(0, 85, 127);\n"
 "padding-top:10px;\n"
 "")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icons/physics.jpg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton.setIcon(icon5)
-        self.pushButton.setIconSize(QSize(300, 230))
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/phy2.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton.setIcon(icon4)
+        self.pushButton.setIconSize(QSize(669, 342))
 
         self.verticalLayout.addWidget(self.pushButton)
 
@@ -951,7 +950,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1046, 782))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1085, 875))
         self.line_9 = QFrame(self.scrollAreaWidgetContents_2)
         self.line_9.setObjectName(u"line_9")
         self.line_9.setGeometry(QRect(0, 350, 1531, 16))
@@ -1139,20 +1138,14 @@ class Ui_MainWindow(object):
 "background-color:black;\n"
 "font: 75 26pt \"Tahoma\";\n"
 "")
+        self.label_8.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_15.addWidget(self.label_8)
 
-        self.pushButton_3 = QPushButton(self.solved_examples_page)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setMinimumSize(QSize(42, 544))
-        self.pushButton_3.setStyleSheet(u"background-color: rgb(0, 85, 127);\n"
-"background-color: rgb(0, 0, 0);")
-        icon6 = QIcon()
-        icon6.addFile(u"images/phy_ass.jpg", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_3.setIcon(icon6)
-        self.pushButton_3.setIconSize(QSize(730, 490))
+        self.textBrowser_3 = QTextBrowser(self.solved_examples_page)
+        self.textBrowser_3.setObjectName(u"textBrowser_3")
 
-        self.verticalLayout_15.addWidget(self.pushButton_3)
+        self.verticalLayout_15.addWidget(self.textBrowser_3)
 
         self.label_26 = QLabel(self.solved_examples_page)
         self.label_26.setObjectName(u"label_26")
@@ -1404,7 +1397,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.Home.setCurrentIndex(0)
+        self.Home.setCurrentIndex(1)
         self.stackedWidget.setCurrentIndex(0)
 
 
@@ -1417,13 +1410,13 @@ class Ui_MainWindow(object):
         self.notes_button_7.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
         self.solved_examples_button_7.setText(QCoreApplication.translate("MainWindow", u"Solved_examples", None))
         self.formula_list_button_7.setText(QCoreApplication.translate("MainWindow", u"Formula List", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Powered By OAU Department Of PhySics", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Elementary PhySics Assistant", None))
         self.pushButton_2.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"Bed Rock Of Modern Technology", None))
         self.pushButton.setText("")
         self.app_description.setText(QCoreApplication.translate("MainWindow", u"This Application is Specially Designed to Offer Solution to Problems of Engineering Physics-II As per Syllabus of Obafemi Awolowo University revised July 2021", None))
         self.about_button.setText(QCoreApplication.translate("MainWindow", u"About PhyAss", None))
-        self.menu_button.setText(QCoreApplication.translate("MainWindow", u"Menu", None))
+        self.menu_button.setText(QCoreApplication.translate("MainWindow", u"Tutorial", None))
         self.Home.setTabText(self.Home.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"HOME", None))
         self.note1_label_2.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
         self.note1_label.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
@@ -1562,8 +1555,28 @@ class Ui_MainWindow(object):
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"    m", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"    m", None))
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"    Kg", None))
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"                            ABOUT PHY ASSISTANT", None))
-        self.pushButton_3.setText("")
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"ABOUT PHY ASSISTANT", None))
+        self.textBrowser_3.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/atom.ico\" /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -"
+                        "qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">The content in the Elementary Physics application is presented in a short and lucid manner in a question and anser format. For preparation of the content presented here many web resources and reference books were used. I have listed the web resources at appropriate places and we list the reference books below.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0"
+                        "px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600;\">REFERENCES</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:600;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">1. Engineering Physics...</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">2. etc...</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left"
+                        ":0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p></body></html>", None))
         self.label_26.setText("")
         self.label_3.setText("")
         self.main_note_btn.setText(QCoreApplication.translate("MainWindow", u"NOTE", None))

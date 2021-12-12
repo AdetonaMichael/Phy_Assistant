@@ -558,7 +558,7 @@ QAbstractSpinBox {
        <string notr="true">padding:0px;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -693,7 +693,7 @@ color:white;</string>
                  </font>
                 </property>
                 <property name="text">
-                 <string>Powered By OAU Department Of PhySics</string>
+                 <string>Elementary PhySics Assistant</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -710,7 +710,7 @@ color:white;</string>
                 </property>
                 <property name="icon">
                  <iconset resource="../../phy_assistant2/icons.qrc">
-                  <normaloff>:/icons/icons/oau.jpg</normaloff>:/icons/icons/oau.jpg</iconset>
+                  <normaloff>:/icons/icons/atom.ico</normaloff>:/icons/icons/atom.ico</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -759,7 +759,8 @@ font: 14pt &quot;Tahoma&quot;;</string>
               <item>
                <widget class="QPushButton" name="pushButton">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgb(255, 255, 255);
+                 <string notr="true">alternate-background-color: rgb(0, 85, 127);
+background-color: rgb(0, 85, 127);
 padding-top:10px;
 </string>
                 </property>
@@ -768,12 +769,12 @@ padding-top:10px;
                 </property>
                 <property name="icon">
                  <iconset resource="../../phy_assistant2/icons.qrc">
-                  <normaloff>:/icons/icons/physics.jpg</normaloff>:/icons/icons/physics.jpg</iconset>
+                  <normaloff>:/icons/phy2.jpg</normaloff>:/icons/phy2.jpg</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>300</width>
-                  <height>230</height>
+                  <width>669</width>
+                  <height>342</height>
                  </size>
                 </property>
                </widget>
@@ -849,7 +850,7 @@ margin-left:20px;
 padding:5px;</string>
                     </property>
                     <property name="text">
-                     <string>Menu</string>
+                     <string>Tutorial</string>
                     </property>
                     <property name="icon">
                      <iconset resource="../../phy_assistant2/icons.qrc">
@@ -1191,8 +1192,8 @@ font: 11pt &quot;hooge 05_54&quot;;</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>1046</width>
-                      <height>782</height>
+                      <width>1085</width>
+                      <height>875</height>
                      </rect>
                     </property>
                     <widget class="Line" name="line_9">
@@ -1806,34 +1807,34 @@ font: 75 26pt &quot;Tahoma&quot;;
 </string>
                      </property>
                      <property name="text">
-                      <string>                            ABOUT PHY ASSISTANT</string>
+                      <string>ABOUT PHY ASSISTANT</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_3">
-                     <property name="minimumSize">
-                      <size>
-                       <width>42</width>
-                       <height>544</height>
-                      </size>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">background-color: rgb(0, 85, 127);
-background-color: rgb(0, 0, 0);</string>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset>
-                       <normaloff>images/phy_ass.jpg</normaloff>images/phy_ass.jpg</iconset>
-                     </property>
-                     <property name="iconSize">
-                      <size>
-                       <width>730</width>
-                       <height>490</height>
-                      </size>
+                    <widget class="QTextBrowser" name="textBrowser_3">
+                     <property name="html">
+                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/icons/icons/atom.ico&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;The content in the Elementary Physics application is presented in a short and lucid manner in a question and anser format. For preparation of the content presented here many web resources and reference books were used. I have listed the web resources at appropriate places and we list the reference books below.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;REFERENCES&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;1. Engineering Physics...&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2. etc...&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                     </widget>
                    </item>
